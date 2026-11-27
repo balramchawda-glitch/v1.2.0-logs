@@ -1,0 +1,130 @@
+{
+  "context": {
+    "action": "init",
+    "bap_id": "ondc.onetab.ai",
+    "bap_uri": "https://ondc.onetab.ai/ondc-seller-v2",
+    "bpp_id": "workbench.ondc.tech",
+    "bpp_uri": "https://workbench.ondc.tech/api-service/nic2004:60232/1.2.0/seller",
+    "city": "std:0734",
+    "core_version": "1.2.0",
+    "country": "IND",
+    "domain": "nic2004:60232",
+    "message_id": "e87bead6-f20e-4688-a245-5e03b6dd8b55",
+    "timestamp": "2026-11-27T07:27:44.735Z",
+    "transaction_id": "45b3e5ed-e297-4564-91c2-5b346d5c73ef",
+    "ttl": "PT30S"
+  },
+  "message": {
+    "order": {
+      "billing": {
+        "address": {
+          "area_code": "452001",
+          "building": "Building A",
+          "city": "Indore",
+          "country": "India",
+          "locality": "Local Area",
+          "name": "Onetab Office",
+          "state": "Madhya Pradesh"
+        },
+        "created_at": "2026-11-27T07:27:44.717Z",
+        "email": "billing@ondc.org",
+        "name": "Onetab",
+        "phone": "9876543210",
+        "tax_number": "23AAECO3224B1Z6",
+        "updated_at": "2026-11-27T07:27:44.717Z"
+      },
+      "fulfillments": [
+        {
+          "end": {
+            "contact": {
+              "email": "buyer@onetab.ai",
+              "phone": "9123456780"
+            },
+            "location": {
+              "address": {
+                "area_code": "452010",
+                "building": "Sunrise",
+                "city": "Indore",
+                "country": "India",
+                "locality": "Vijay Nagar",
+                "name": "Flat 4B",
+                "state": "Madhya Pradesh"
+              },
+              "gps": "22.7196,75.8577"
+            }
+          },
+          "id": "1",
+          "start": {
+            "contact": {
+              "email": "store@onetab.ai",
+              "phone": "9876543210"
+            },
+            "location": {
+              "address": {
+                "area_code": "456010",
+                "building": "12 Road",
+                "city": "Ujjain",
+                "country": "India",
+                "locality": "Freeganj",
+                "name": "Store Ujjain",
+                "state": "Madhya Pradesh"
+              },
+              "gps": "23.1793,75.7849"
+            }
+          },
+          "tags": [
+            {
+              "code": "linked_provider",
+              "list": [
+                {
+                  "code": "id",
+                  "value": "ONETAB-1"
+                },
+                {
+                  "code": "name",
+                  "value": "Onetab Store"
+                }
+              ]
+            }
+          ],
+          "type": "Delivery"
+        }
+      ],
+      "items": [
+        {
+          "category_id": "Standard Delivery",
+          "descriptor": {
+            "code": "P2H2P"
+          },
+          "fulfillment_id": "1",
+          "id": "I1"
+        }
+      ],
+      "payment": {
+        "@ondc/org/settlement_basis": "invoicing",
+        "@ondc/org/settlement_window": "P15D",
+        "collected_by": "BAP",
+        "type": "POST-FULFILLMENT"
+      },
+      "provider": {
+        "id": "P1",
+        "locations": [
+          {
+            "id": "L1"
+          }
+        ]
+      },
+      "tags": [
+        {
+          "code": "bap_terms",
+          "list": [
+            {
+              "code": "accept_bpp_terms",
+              "value": "Y"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,139 @@
+{
+  "context": {
+    "action": "search",
+    "bap_id": "ondc.onetab.ai",
+    "bap_uri": "https://ondc.onetab.ai/ondc-seller-v2",
+    "city": "std:0734",
+    "core_version": "1.2.0",
+    "country": "IND",
+    "domain": "nic2004:60232",
+    "message_id": "c5f438ed-a161-4bc7-a1c8-ebfff774a7e0",
+    "timestamp": "2026-11-27T07:31:13.754Z",
+    "transaction_id": "72e55c8d-f724-43aa-b420-04a0694cb2f5",
+    "ttl": "PT30S"
+  },
+  "message": {
+    "intent": {
+      "@ondc/org/payload_details": {
+        "category": "Grocery",
+        "dangerous_goods": false,
+        "dimensions": {
+          "breadth": {
+            "unit": "centimeter",
+            "value": 20
+          },
+          "height": {
+            "unit": "centimeter",
+            "value": 15
+          },
+          "length": {
+            "unit": "centimeter",
+            "value": 30
+          }
+        },
+        "value": {
+          "currency": "INR",
+          "value": "1200.00"
+        },
+        "weight": {
+          "unit": "kilogram",
+          "value": 2.5
+        }
+      },
+      "category": {
+        "id": "Standard Delivery"
+      },
+      "fulfillment": {
+        "end": {
+          "location": {
+            "address": {
+              "area_code": "452010"
+            },
+            "gps": "22.7196,75.8577"
+          }
+        },
+        "start": {
+          "location": {
+            "address": {
+              "area_code": "456010"
+            },
+            "gps": "23.1793,75.7849"
+          }
+        },
+        "tags": [
+          {
+            "code": "linked_provider",
+            "list": [
+              {
+                "code": "id",
+                "value": "ONETAB-1"
+              },
+              {
+                "code": "name",
+                "value": "Onetab Store"
+              }
+            ]
+          },
+          {
+            "code": "linked_order",
+            "list": [
+              {
+                "code": "currency",
+                "value": "INR"
+              },
+              {
+                "code": "declared_value",
+                "value": "1200"
+              },
+              {
+                "code": "category",
+                "value": "Grocery"
+              },
+              {
+                "code": "weight_unit",
+                "value": "kilogram"
+              },
+              {
+                "code": "weight_value",
+                "value": "2.5"
+              },
+              {
+                "code": "dim_unit",
+                "value": "centimeter"
+              },
+              {
+                "code": "length",
+                "value": "30"
+              },
+              {
+                "code": "breadth",
+                "value": "20"
+              },
+              {
+                "code": "height",
+                "value": "15"
+              }
+            ]
+          }
+        ],
+        "type": "Delivery"
+      },
+      "payment": {
+        "type": "POST-FULFILLMENT"
+      },
+      "provider": {
+        "time": {
+          "days": "1,2,3,4,5,6,7",
+          "duration": "PT30M",
+          "range": {
+            "end": "2000",
+            "start": "1000"
+          },
+          "schedule": {
+            "holidays": []
+          }
+        }
+      }
+    }
+  }
+}

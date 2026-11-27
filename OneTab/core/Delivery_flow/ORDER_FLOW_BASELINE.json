@@ -1,0 +1,4048 @@
+[
+  {
+    "req": {
+      "context": {
+        "action": "search",
+        "bap_id": "ondc.onetab.ai",
+        "bap_uri": "https://ondc.onetab.ai/ondc-seller-v2",
+        "city": "std:0734",
+        "core_version": "1.2.0",
+        "country": "IND",
+        "domain": "nic2004:60232",
+        "message_id": "6ee79fa9-96eb-46a2-8f69-617e2fb749d6",
+        "timestamp": "2026-11-27T07:14:58.152Z",
+        "transaction_id": "19115b40-b849-4326-9a31-5aab5a42dc95",
+        "ttl": "PT30S"
+      },
+      "message": {
+        "intent": {
+          "@ondc/org/payload_details": {
+            "category": "Grocery",
+            "dangerous_goods": false,
+            "dimensions": {
+              "breadth": {
+                "unit": "centimeter",
+                "value": 20
+              },
+              "height": {
+                "unit": "centimeter",
+                "value": 15
+              },
+              "length": {
+                "unit": "centimeter",
+                "value": 30
+              }
+            },
+            "value": {
+              "currency": "INR",
+              "value": "1200.00"
+            },
+            "weight": {
+              "unit": "kilogram",
+              "value": 2.5
+            }
+          },
+          "category": {
+            "id": "Standard Delivery"
+          },
+          "fulfillment": {
+            "end": {
+              "location": {
+                "address": {
+                  "area_code": "452010"
+                },
+                "gps": "22.7196,75.8577"
+              }
+            },
+            "start": {
+              "location": {
+                "address": {
+                  "area_code": "456010"
+                },
+                "gps": "23.1793,75.7849"
+              }
+            },
+            "tags": [
+              {
+                "code": "linked_provider",
+                "list": [
+                  {
+                    "code": "id",
+                    "value": "ONETAB-1"
+                  },
+                  {
+                    "code": "name",
+                    "value": "Onetab Store"
+                  }
+                ]
+              },
+              {
+                "code": "linked_order",
+                "list": [
+                  {
+                    "code": "currency",
+                    "value": "INR"
+                  },
+                  {
+                    "code": "declared_value",
+                    "value": "1200"
+                  },
+                  {
+                    "code": "category",
+                    "value": "Grocery"
+                  },
+                  {
+                    "code": "weight_unit",
+                    "value": "kilogram"
+                  },
+                  {
+                    "code": "weight_value",
+                    "value": "2.5"
+                  },
+                  {
+                    "code": "dim_unit",
+                    "value": "centimeter"
+                  },
+                  {
+                    "code": "length",
+                    "value": "30"
+                  },
+                  {
+                    "code": "breadth",
+                    "value": "20"
+                  },
+                  {
+                    "code": "height",
+                    "value": "15"
+                  }
+                ]
+              }
+            ],
+            "type": "Delivery"
+          },
+          "payment": {
+            "type": "POST-FULFILLMENT"
+          },
+          "provider": {
+            "time": {
+              "days": "1,2,3,4,5,6,7",
+              "duration": "PT30M",
+              "range": {
+                "end": "2000",
+                "start": "1000"
+              },
+              "schedule": {
+                "holidays": []
+              }
+            }
+          }
+        }
+      }
+    },
+    "res": {
+      "response": {
+        "context": {
+          "action": "search",
+          "bap_id": "ondc.onetab.ai",
+          "bap_uri": "https://ondc.onetab.ai/ondc-seller-v2",
+          "city": "std:0734",
+          "core_version": "1.2.0",
+          "country": "IND",
+          "domain": "nic2004:60232",
+          "message_id": "6ee79fa9-96eb-46a2-8f69-617e2fb749d6",
+          "timestamp": "2026-11-27T07:14:58.152Z",
+          "transaction_id": "19115b40-b849-4326-9a31-5aab5a42dc95",
+          "ttl": "PT30S"
+        },
+        "message": {
+          "ack": {
+            "status": "ACK"
+          }
+        }
+      }
+    }
+  },
+  {
+    "req": {
+      "context": {
+        "action": "on_search",
+        "bap_id": "ondc.onetab.ai",
+        "bap_uri": "https://ondc.onetab.ai/ondc-seller-v2",
+        "bpp_id": "workbench.ondc.tech",
+        "bpp_uri": "https://workbench.ondc.tech/api-service/nic2004:60232/1.2.0/seller",
+        "city": "std:0734",
+        "core_version": "1.2.0",
+        "country": "IND",
+        "domain": "nic2004:60232",
+        "message_id": "6ee79fa9-96eb-46a2-8f69-617e2fb749d6",
+        "timestamp": "2026-11-27T07:14:58.605Z",
+        "transaction_id": "19115b40-b849-4326-9a31-5aab5a42dc95",
+        "ttl": "PT30S"
+      },
+      "message": {
+        "catalog": {
+          "bpp/descriptor": {
+            "name": "LSP Aggregator Inc",
+            "tags": [
+              {
+                "code": "bpp_terms",
+                "list": [
+                  {
+                    "code": "static_terms",
+                    "value": ""
+                  },
+                  {
+                    "code": "static_terms_new",
+                    "value": "https://github.com/ONDC-Official/NP-Static-Terms/lspNP_LSP/1.0/tc.pdf"
+                  },
+                  {
+                    "code": "effective_date",
+                    "value": "2026-11-27T07:14:58.605Z"
+                  }
+                ]
+              }
+            ]
+          },
+          "bpp/providers": [
+            {
+              "categories": [
+                {
+                  "id": "Standard Delivery",
+                  "time": {
+                    "duration": "P2D",
+                    "label": "TAT",
+                    "timestamp": "2026-11-29"
+                  }
+                }
+              ],
+              "descriptor": {
+                "long_desc": "LSP Courier Inc",
+                "name": "LSP Courier Inc",
+                "short_desc": "LSP Courier Inc"
+              },
+              "fulfillments": [
+                {
+                  "id": "1",
+                  "start": {
+                    "time": {
+                      "duration": "PT12H"
+                    }
+                  },
+                  "tags": [
+                    {
+                      "code": "distance",
+                      "list": [
+                        {
+                          "code": "motorable_distance_type",
+                          "value": "kilometer"
+                        },
+                        {
+                          "code": "motorable_distance",
+                          "value": "1.8"
+                        }
+                      ]
+                    }
+                  ],
+                  "type": "Delivery"
+                },
+                {
+                  "id": "2",
+                  "type": "RTO"
+                }
+              ],
+              "id": "P1",
+              "items": [
+                {
+                  "category_id": "Standard Delivery",
+                  "descriptor": {
+                    "code": "P2H2P",
+                    "long_desc": "Fast delivery",
+                    "name": "Fast delivery",
+                    "short_desc": "Fast delivery"
+                  },
+                  "fulfillment_id": "1",
+                  "id": "I1",
+                  "parent_item_id": "",
+                  "price": {
+                    "currency": "INR",
+                    "value": "59.00"
+                  },
+                  "time": {
+                    "duration": "P2D",
+                    "label": "TAT",
+                    "timestamp": "2026-11-29"
+                  }
+                },
+                {
+                  "category_id": "Standard Delivery",
+                  "descriptor": {
+                    "code": "P2P",
+                    "long_desc": "RTO quote",
+                    "name": "RTO quote",
+                    "short_desc": "RTO quote"
+                  },
+                  "fulfillment_id": "2",
+                  "id": "I2",
+                  "parent_item_id": "I1",
+                  "price": {
+                    "currency": "INR",
+                    "value": "23.60"
+                  },
+                  "time": {
+                    "duration": "P2D",
+                    "label": "TAT",
+                    "timestamp": "2026-11-29"
+                  }
+                }
+              ],
+              "locations": [
+                {
+                  "address": {
+                    "area_code": "560076",
+                    "city": "Bengaluru",
+                    "state": "KA",
+                    "street": "Jayanagar 4th Block"
+                  },
+                  "gps": "12.967555,77.749666",
+                  "id": "L1"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "res": {
+      "response": {
+        "context": {
+          "action": "on_search",
+          "bap_id": "ondc.onetab.ai",
+          "bap_uri": "https://ondc.onetab.ai/ondc-seller-v2",
+          "bpp_id": "workbench.ondc.tech",
+          "bpp_uri": "https://workbench.ondc.tech/api-service/nic2004:60232/1.2.0/seller",
+          "city": "std:0734",
+          "core_version": "1.2.0",
+          "country": "IND",
+          "domain": "nic2004:60232",
+          "message_id": "6ee79fa9-96eb-46a2-8f69-617e2fb749d6",
+          "timestamp": "2026-11-27T07:14:58.605Z",
+          "transaction_id": "19115b40-b849-4326-9a31-5aab5a42dc95",
+          "ttl": "PT30S"
+        },
+        "message": {
+          "ack": {
+            "status": "ACK",
+            "tags": [
+              {
+                "code": "bap_terms",
+                "list": [
+                  {
+                    "code": "accept_bpp_terms",
+                    "value": "Y"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "req": {
+      "context": {
+        "action": "init",
+        "bap_id": "ondc.onetab.ai",
+        "bap_uri": "https://ondc.onetab.ai/ondc-seller-v2",
+        "bpp_id": "workbench.ondc.tech",
+        "bpp_uri": "https://workbench.ondc.tech/api-service/nic2004:60232/1.2.0/seller",
+        "city": "std:0734",
+        "core_version": "1.2.0",
+        "country": "IND",
+        "domain": "nic2004:60232",
+        "message_id": "8fad709e-efb4-4f58-b8c7-d6afe497e96c",
+        "timestamp": "2026-11-27T07:14:58.728Z",
+        "transaction_id": "19115b40-b849-4326-9a31-5aab5a42dc95",
+        "ttl": "PT30S"
+      },
+      "message": {
+        "order": {
+          "billing": {
+            "address": {
+              "area_code": "452001",
+              "building": "Building A",
+              "city": "Indore",
+              "country": "India",
+              "locality": "Local Area",
+              "name": "Onetab Office",
+              "state": "Madhya Pradesh"
+            },
+            "created_at": "2026-11-27T07:14:58.711Z",
+            "email": "billing@ondc.org",
+            "name": "Onetab",
+            "phone": "9876543210",
+            "tax_number": "23AAECO3224B1Z6",
+            "updated_at": "2026-11-27T07:14:58.711Z"
+          },
+          "fulfillments": [
+            {
+              "end": {
+                "contact": {
+                  "email": "buyer@onetab.ai",
+                  "phone": "9123456780"
+                },
+                "location": {
+                  "address": {
+                    "area_code": "452010",
+                    "building": "Sunrise",
+                    "city": "Indore",
+                    "country": "India",
+                    "locality": "Vijay Nagar",
+                    "name": "Flat 4B",
+                    "state": "Madhya Pradesh"
+                  },
+                  "gps": "22.7196,75.8577"
+                }
+              },
+              "id": "1",
+              "start": {
+                "contact": {
+                  "email": "store@onetab.ai",
+                  "phone": "9876543210"
+                },
+                "location": {
+                  "address": {
+                    "area_code": "456010",
+                    "building": "12 Road",
+                    "city": "Ujjain",
+                    "country": "India",
+                    "locality": "Freeganj",
+                    "name": "Store Ujjain",
+                    "state": "Madhya Pradesh"
+                  },
+                  "gps": "23.1793,75.7849"
+                }
+              },
+              "tags": [
+                {
+                  "code": "linked_provider",
+                  "list": [
+                    {
+                      "code": "id",
+                      "value": "ONETAB-1"
+                    },
+                    {
+                      "code": "name",
+                      "value": "Onetab Store"
+                    }
+                  ]
+                }
+              ],
+              "type": "Delivery"
+            }
+          ],
+          "items": [
+            {
+              "category_id": "Standard Delivery",
+              "descriptor": {
+                "code": "P2H2P"
+              },
+              "fulfillment_id": "1",
+              "id": "I1"
+            }
+          ],
+          "payment": {
+            "@ondc/org/settlement_basis": "invoicing",
+            "@ondc/org/settlement_window": "P15D",
+            "collected_by": "BAP",
+            "type": "POST-FULFILLMENT"
+          },
+          "provider": {
+            "id": "P1",
+            "locations": [
+              {
+                "id": "L1"
+              }
+            ]
+          },
+          "tags": [
+            {
+              "code": "bap_terms",
+              "list": [
+                {
+                  "code": "accept_bpp_terms",
+                  "value": "Y"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "res": {
+      "response": {
+        "context": {
+          "action": "init",
+          "bap_id": "ondc.onetab.ai",
+          "bap_uri": "https://ondc.onetab.ai/ondc-seller-v2",
+          "bpp_id": "workbench.ondc.tech",
+          "bpp_uri": "https://workbench.ondc.tech/api-service/nic2004:60232/1.2.0/seller",
+          "city": "std:0734",
+          "core_version": "1.2.0",
+          "country": "IND",
+          "domain": "nic2004:60232",
+          "message_id": "8fad709e-efb4-4f58-b8c7-d6afe497e96c",
+          "timestamp": "2026-11-27T07:14:58.728Z",
+          "transaction_id": "19115b40-b849-4326-9a31-5aab5a42dc95",
+          "ttl": "PT30S"
+        },
+        "message": {
+          "ack": {
+            "status": "ACK"
+          }
+        }
+      }
+    }
+  },
+  {
+    "req": {
+      "context": {
+        "action": "on_init",
+        "bap_id": "ondc.onetab.ai",
+        "bap_uri": "https://ondc.onetab.ai/ondc-seller-v2",
+        "bpp_id": "workbench.ondc.tech",
+        "bpp_uri": "https://workbench.ondc.tech/api-service/nic2004:60232/1.2.0/seller",
+        "city": "std:0734",
+        "core_version": "1.2.0",
+        "country": "IND",
+        "domain": "nic2004:60232",
+        "message_id": "8fad709e-efb4-4f58-b8c7-d6afe497e96c",
+        "timestamp": "2026-11-27T07:14:58.860Z",
+        "transaction_id": "19115b40-b849-4326-9a31-5aab5a42dc95",
+        "ttl": "PT30S"
+      },
+      "message": {
+        "order": {
+          "cancellation_terms": [
+            {
+              "cancellation_fee": {
+                "amount": {
+                  "currency": "INR",
+                  "value": "0.00"
+                },
+                "percentage": "0.00"
+              },
+              "fulfillment_state": {
+                "descriptor": {
+                  "code": "Pending",
+                  "short_desc": "008"
+                }
+              }
+            },
+            {
+              "cancellation_fee": {
+                "amount": {
+                  "currency": "INR",
+                  "value": "50.00"
+                },
+                "percentage": "100.00"
+              },
+              "fulfillment_state": {
+                "descriptor": {
+                  "code": "Agent-assigned",
+                  "short_desc": "001,003"
+                }
+              }
+            },
+            {
+              "cancellation_fee": {
+                "amount": {
+                  "currency": "INR",
+                  "value": "50.00"
+                },
+                "percentage": "100.00"
+              },
+              "fulfillment_state": {
+                "descriptor": {
+                  "code": "Order-picked-up",
+                  "short_desc": "001,003"
+                }
+              }
+            },
+            {
+              "cancellation_fee": {
+                "amount": {
+                  "currency": "INR",
+                  "value": "50.00"
+                },
+                "percentage": "100.00"
+              },
+              "fulfillment_state": {
+                "descriptor": {
+                  "code": "Out-for-delivery",
+                  "short_desc": "011,012,013,014,015"
+                }
+              }
+            }
+          ],
+          "fulfillments": [
+            {
+              "end": {
+                "contact": {
+                  "email": "buyer@onetab.ai",
+                  "phone": "9123456780"
+                },
+                "location": {
+                  "address": {
+                    "area_code": "452010",
+                    "building": "Sunrise",
+                    "city": "Indore",
+                    "country": "India",
+                    "locality": "Vijay Nagar",
+                    "name": "Flat 4B",
+                    "state": "Madhya Pradesh"
+                  },
+                  "gps": "22.7196,75.8577"
+                }
+              },
+              "id": "1",
+              "start": {
+                "contact": {
+                  "email": "store@onetab.ai",
+                  "phone": "9876543210"
+                },
+                "location": {
+                  "address": {
+                    "area_code": "456010",
+                    "building": "12 Road",
+                    "city": "Ujjain",
+                    "country": "India",
+                    "locality": "Freeganj",
+                    "name": "Store Ujjain",
+                    "state": "Madhya Pradesh"
+                  },
+                  "gps": "23.1793,75.7849"
+                }
+              },
+              "tags": [
+                {
+                  "code": "linked_provider",
+                  "list": [
+                    {
+                      "code": "id",
+                      "value": "ONETAB-1"
+                    },
+                    {
+                      "code": "name",
+                      "value": "Onetab Store"
+                    }
+                  ]
+                }
+              ],
+              "type": "Delivery"
+            }
+          ],
+          "items": [
+            {
+              "descriptor": {
+                "code": "P2H2P"
+              },
+              "fulfillment_id": "1",
+              "id": "I1"
+            }
+          ],
+          "payment": {
+            "@ondc/org/settlement_basis": "invoicing",
+            "@ondc/org/settlement_window": "P15D",
+            "collected_by": "BAP",
+            "type": "POST-FULFILLMENT"
+          },
+          "provider": {
+            "id": "P1",
+            "locations": [
+              {
+                "id": "L1"
+              }
+            ]
+          },
+          "quote": {
+            "breakup": [
+              {
+                "@ondc/org/item_id": "I1",
+                "@ondc/org/title_type": "delivery",
+                "price": {
+                  "currency": "INR",
+                  "value": "50.00"
+                }
+              },
+              {
+                "@ondc/org/item_id": "I1",
+                "@ondc/org/title_type": "tax",
+                "price": {
+                  "currency": "INR",
+                  "value": "9.00"
+                }
+              }
+            ],
+            "price": {
+              "currency": "INR",
+              "value": "59.00"
+            },
+            "ttl": "PT15M"
+          },
+          "tags": [
+            {
+              "code": "bpp_terms",
+              "list": [
+                {
+                  "code": "max_liability",
+                  "value": "2"
+                },
+                {
+                  "code": "max_liability_cap",
+                  "value": "10000"
+                },
+                {
+                  "code": "mandatory_arbitration",
+                  "value": "false"
+                },
+                {
+                  "code": "court_jurisdiction",
+                  "value": "Bengaluru"
+                },
+                {
+                  "code": "delay_interest",
+                  "value": "1000"
+                },
+                {
+                  "code": "static_terms",
+                  "value": "https://github.com/ONDC-Official/protocol-network-extension/discussions/79"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "res": {
+      "response": {
+        "context": {
+          "action": "on_init",
+          "bap_id": "ondc.onetab.ai",
+          "bap_uri": "https://ondc.onetab.ai/ondc-seller-v2",
+          "bpp_id": "workbench.ondc.tech",
+          "bpp_uri": "https://workbench.ondc.tech/api-service/nic2004:60232/1.2.0/seller",
+          "city": "std:0734",
+          "core_version": "1.2.0",
+          "country": "IND",
+          "domain": "nic2004:60232",
+          "message_id": "8fad709e-efb4-4f58-b8c7-d6afe497e96c",
+          "timestamp": "2026-11-27T07:14:58.860Z",
+          "transaction_id": "19115b40-b849-4326-9a31-5aab5a42dc95",
+          "ttl": "PT30S"
+        },
+        "message": {
+          "ack": {
+            "status": "ACK"
+          }
+        }
+      }
+    }
+  },
+  {
+    "req": {
+      "context": {
+        "action": "confirm",
+        "bap_id": "ondc.onetab.ai",
+        "bap_uri": "https://ondc.onetab.ai/ondc-seller-v2",
+        "bpp_id": "workbench.ondc.tech",
+        "bpp_uri": "https://workbench.ondc.tech/api-service/nic2004:60232/1.2.0/seller",
+        "city": "std:0734",
+        "core_version": "1.2.0",
+        "country": "IND",
+        "domain": "nic2004:60232",
+        "message_id": "e09ecf2a-ba5e-43e7-8cff-ed91c6d165b8",
+        "timestamp": "2026-11-27T07:14:58.957Z",
+        "transaction_id": "19115b40-b849-4326-9a31-5aab5a42dc95",
+        "ttl": "PT30S"
+      },
+      "message": {
+        "order": {
+          "@ondc/org/linked_order": {
+            "items": [
+              {
+                "category_id": "Grocery",
+                "descriptor": {
+                  "name": "Item 1"
+                },
+                "price": {
+                  "currency": "INR",
+                  "value": "1200.00"
+                },
+                "quantity": {
+                  "count": 1,
+                  "measure": {
+                    "unit": "kilogram",
+                    "value": 2.5
+                  }
+                }
+              }
+            ],
+            "order": {
+              "dimensions": {
+                "breadth": {
+                  "unit": "centimeter",
+                  "value": 20
+                },
+                "height": {
+                  "unit": "centimeter",
+                  "value": 15
+                },
+                "length": {
+                  "unit": "centimeter",
+                  "value": 30
+                }
+              },
+              "id": "WB-BASELINE-8151",
+              "weight": {
+                "unit": "kilogram",
+                "value": 2.5
+              }
+            },
+            "provider": {
+              "address": {
+                "area_code": "456010",
+                "building": "12 Road",
+                "city": "Ujjain",
+                "country": "India",
+                "locality": "Freeganj",
+                "name": "Store Ujjain",
+                "state": "Madhya Pradesh"
+              },
+              "descriptor": {
+                "name": "Onetab Store"
+              }
+            }
+          },
+          "billing": {
+            "address": {
+              "area_code": "452001",
+              "building": "Building A",
+              "city": "Indore",
+              "country": "India",
+              "locality": "Local Area",
+              "name": "Onetab Office",
+              "state": "Madhya Pradesh"
+            },
+            "created_at": "2026-11-27T07:14:58.711Z",
+            "email": "billing@ondc.org",
+            "name": "Onetab",
+            "phone": "9876543210",
+            "tax_number": "23AAECO3224B1Z6",
+            "updated_at": "2026-11-27T07:14:58.711Z"
+          },
+          "created_at": "2026-11-27T07:14:58.972Z",
+          "fulfillments": [
+            {
+              "end": {
+                "contact": {
+                  "email": "buyer@onetab.ai",
+                  "phone": "9123456780"
+                },
+                "location": {
+                  "address": {
+                    "area_code": "452010",
+                    "building": "Sunrise",
+                    "city": "Indore",
+                    "country": "India",
+                    "locality": "Vijay Nagar",
+                    "name": "Flat 4B",
+                    "state": "Madhya Pradesh"
+                  },
+                  "gps": "22.7196,75.8577"
+                },
+                "person": {
+                  "name": "Buyer Person"
+                }
+              },
+              "id": "1",
+              "start": {
+                "contact": {
+                  "email": "store@onetab.ai",
+                  "phone": "9876543210"
+                },
+                "location": {
+                  "address": {
+                    "area_code": "456010",
+                    "building": "12 Road",
+                    "city": "Ujjain",
+                    "country": "India",
+                    "locality": "Freeganj",
+                    "name": "Store Ujjain",
+                    "state": "Madhya Pradesh"
+                  },
+                  "gps": "23.1793,75.7849"
+                },
+                "person": {
+                  "name": "Onetab Store"
+                },
+                "time": {
+                  "duration": "PT12H"
+                }
+              },
+              "tags": [
+                {
+                  "code": "linked_provider",
+                  "list": [
+                    {
+                      "code": "id",
+                      "value": "ONETAB-1"
+                    },
+                    {
+                      "code": "name",
+                      "value": "Onetab Store"
+                    },
+                    {
+                      "code": "address",
+                      "value": "Store Ujjain,12 Road,Freeganj,Ujjain,Madhya Pradesh,456010"
+                    }
+                  ]
+                },
+                {
+                  "code": "linked_order",
+                  "list": [
+                    {
+                      "code": "id",
+                      "value": "WB-BASELINE-8151"
+                    },
+                    {
+                      "code": "currency",
+                      "value": "INR"
+                    },
+                    {
+                      "code": "declared_value",
+                      "value": "1200"
+                    },
+                    {
+                      "code": "weight_unit",
+                      "value": "kilogram"
+                    },
+                    {
+                      "code": "weight_value",
+                      "value": "2.5"
+                    },
+                    {
+                      "code": "dim_unit",
+                      "value": "centimeter"
+                    },
+                    {
+                      "code": "length",
+                      "value": "30"
+                    },
+                    {
+                      "code": "breadth",
+                      "value": "20"
+                    },
+                    {
+                      "code": "height",
+                      "value": "15"
+                    },
+                    {
+                      "code": "shipment_type",
+                      "value": "box"
+                    }
+                  ]
+                },
+                {
+                  "code": "linked_order_item",
+                  "list": [
+                    {
+                      "code": "category",
+                      "value": "Grocery"
+                    },
+                    {
+                      "code": "name",
+                      "value": "Item 1"
+                    },
+                    {
+                      "code": "currency",
+                      "value": "INR"
+                    },
+                    {
+                      "code": "value",
+                      "value": "1200"
+                    },
+                    {
+                      "code": "quantity",
+                      "value": "1"
+                    },
+                    {
+                      "code": "weight_unit",
+                      "value": "kilogram"
+                    },
+                    {
+                      "code": "weight_value",
+                      "value": "2.5"
+                    }
+                  ]
+                },
+                {
+                  "code": "state",
+                  "list": [
+                    {
+                      "code": "ready_to_ship",
+                      "value": "no"
+                    }
+                  ]
+                },
+                {
+                  "code": "rto_action",
+                  "list": [
+                    {
+                      "code": "return_to_origin",
+                      "value": "no"
+                    }
+                  ]
+                }
+              ],
+              "type": "Delivery"
+            }
+          ],
+          "id": "ORD-1795763698957",
+          "items": [
+            {
+              "category_id": "Standard Delivery",
+              "descriptor": {
+                "code": "P2H2P"
+              },
+              "fulfillment_id": "1",
+              "id": "I1",
+              "time": {
+                "duration": "P2D",
+                "label": "TAT",
+                "timestamp": "2026-11-29"
+              }
+            }
+          ],
+          "payment": {
+            "@ondc/org/settlement_basis": "invoicing",
+            "@ondc/org/settlement_window": "P15D",
+            "collected_by": "BAP",
+            "type": "POST-FULFILLMENT"
+          },
+          "provider": {
+            "id": "P1",
+            "locations": [
+              {
+                "id": "L1"
+              }
+            ]
+          },
+          "quote": {
+            "breakup": [
+              {
+                "@ondc/org/item_id": "I1",
+                "@ondc/org/title_type": "delivery",
+                "price": {
+                  "currency": "INR",
+                  "value": "50.00"
+                }
+              },
+              {
+                "@ondc/org/item_id": "I1",
+                "@ondc/org/title_type": "tax",
+                "price": {
+                  "currency": "INR",
+                  "value": "9.00"
+                }
+              }
+            ],
+            "price": {
+              "currency": "INR",
+              "value": "59.00"
+            }
+          },
+          "state": "Created",
+          "tags": [
+            {
+              "code": "bpp_terms",
+              "list": [
+                {
+                  "code": "max_liability",
+                  "value": "2"
+                },
+                {
+                  "code": "max_liability_cap",
+                  "value": "10000"
+                },
+                {
+                  "code": "mandatory_arbitration",
+                  "value": "false"
+                },
+                {
+                  "code": "court_jurisdiction",
+                  "value": "Bengaluru"
+                },
+                {
+                  "code": "delay_interest",
+                  "value": "1000"
+                },
+                {
+                  "code": "static_terms",
+                  "value": "https://github.com/ONDC-Official/protocol-network-extension/discussions/79"
+                }
+              ]
+            },
+            {
+              "code": "bap_terms",
+              "list": [
+                {
+                  "code": "accept_bpp_terms",
+                  "value": "Y"
+                }
+              ]
+            }
+          ],
+          "updated_at": "2026-11-27T07:14:58.972Z"
+        }
+      }
+    },
+    "res": {
+      "response": {
+        "context": {
+          "action": "confirm",
+          "bap_id": "ondc.onetab.ai",
+          "bap_uri": "https://ondc.onetab.ai/ondc-seller-v2",
+          "bpp_id": "workbench.ondc.tech",
+          "bpp_uri": "https://workbench.ondc.tech/api-service/nic2004:60232/1.2.0/seller",
+          "city": "std:0734",
+          "core_version": "1.2.0",
+          "country": "IND",
+          "domain": "nic2004:60232",
+          "message_id": "e09ecf2a-ba5e-43e7-8cff-ed91c6d165b8",
+          "timestamp": "2026-11-27T07:14:58.957Z",
+          "transaction_id": "19115b40-b849-4326-9a31-5aab5a42dc95",
+          "ttl": "PT30S"
+        },
+        "message": {
+          "ack": {
+            "status": "ACK"
+          }
+        }
+      }
+    }
+  },
+  {
+    "req": {
+      "context": {
+        "action": "on_confirm",
+        "bap_id": "ondc.onetab.ai",
+        "bap_uri": "https://ondc.onetab.ai/ondc-seller-v2",
+        "bpp_id": "workbench.ondc.tech",
+        "bpp_uri": "https://workbench.ondc.tech/api-service/nic2004:60232/1.2.0/seller",
+        "city": "std:0734",
+        "core_version": "1.2.0",
+        "country": "IND",
+        "domain": "nic2004:60232",
+        "message_id": "e09ecf2a-ba5e-43e7-8cff-ed91c6d165b8",
+        "timestamp": "2026-11-27T07:14:59.104Z",
+        "transaction_id": "19115b40-b849-4326-9a31-5aab5a42dc95",
+        "ttl": "PT30S"
+      },
+      "message": {
+        "order": {
+          "@ondc/org/linked_order": {
+            "items": [
+              {
+                "category_id": "Grocery",
+                "descriptor": {
+                  "name": "Item 1"
+                },
+                "price": {
+                  "currency": "INR",
+                  "value": "1200.00"
+                },
+                "quantity": {
+                  "count": 1,
+                  "measure": {
+                    "unit": "kilogram",
+                    "value": 2.5
+                  }
+                }
+              }
+            ],
+            "order": {
+              "dimensions": {
+                "breadth": {
+                  "unit": "centimeter",
+                  "value": 20
+                },
+                "height": {
+                  "unit": "centimeter",
+                  "value": 15
+                },
+                "length": {
+                  "unit": "centimeter",
+                  "value": 30
+                }
+              },
+              "id": "WB-BASELINE-8151",
+              "weight": {
+                "unit": "kilogram",
+                "value": 2.5
+              }
+            },
+            "provider": {
+              "address": {
+                "area_code": "456010",
+                "building": "12 Road",
+                "city": "Ujjain",
+                "country": "India",
+                "locality": "Freeganj",
+                "name": "Store Ujjain",
+                "state": "Madhya Pradesh"
+              },
+              "descriptor": {
+                "name": "Onetab Store"
+              }
+            }
+          },
+          "billing": {
+            "address": {
+              "area_code": "452001",
+              "building": "Building A",
+              "city": "Indore",
+              "country": "India",
+              "locality": "Local Area",
+              "name": "Onetab Office",
+              "state": "Madhya Pradesh"
+            },
+            "created_at": "2026-11-27T07:14:58.711Z",
+            "email": "billing@ondc.org",
+            "name": "Onetab",
+            "phone": "9876543210",
+            "tax_number": "23AAECO3224B1Z6",
+            "updated_at": "2026-11-27T07:14:58.711Z"
+          },
+          "cancellation_terms": [
+            {
+              "cancellation_fee": {
+                "amount": {
+                  "currency": "INR",
+                  "value": "0.00"
+                },
+                "percentage": "0.00"
+              },
+              "fulfillment_state": {
+                "descriptor": {
+                  "code": "Pending",
+                  "short_desc": "008"
+                }
+              }
+            },
+            {
+              "cancellation_fee": {
+                "amount": {
+                  "currency": "INR",
+                  "value": "50.00"
+                },
+                "percentage": "100.00"
+              },
+              "fulfillment_state": {
+                "descriptor": {
+                  "code": "Agent-assigned",
+                  "short_desc": "001,003"
+                }
+              }
+            },
+            {
+              "cancellation_fee": {
+                "amount": {
+                  "currency": "INR",
+                  "value": "50.00"
+                },
+                "percentage": "100.00"
+              },
+              "fulfillment_state": {
+                "descriptor": {
+                  "code": "Order-picked-up",
+                  "short_desc": "001,003"
+                }
+              }
+            },
+            {
+              "cancellation_fee": {
+                "amount": {
+                  "currency": "INR",
+                  "value": "50.00"
+                },
+                "percentage": "100.00"
+              },
+              "fulfillment_state": {
+                "descriptor": {
+                  "code": "Out-for-delivery",
+                  "short_desc": "011,012,013,014,015"
+                }
+              }
+            }
+          ],
+          "created_at": "2026-11-27T07:14:58.972Z",
+          "fulfillments": [
+            {
+              "end": {
+                "contact": {
+                  "email": "buyer@onetab.ai",
+                  "phone": "9123456780"
+                },
+                "location": {
+                  "address": {
+                    "area_code": "452010",
+                    "building": "Sunrise",
+                    "city": "Indore",
+                    "country": "India",
+                    "locality": "Vijay Nagar",
+                    "name": "Flat 4B",
+                    "state": "Madhya Pradesh"
+                  },
+                  "gps": "22.7196,75.8577"
+                },
+                "person": {
+                  "name": "Buyer Person"
+                }
+              },
+              "id": "1",
+              "start": {
+                "contact": {
+                  "email": "store@onetab.ai",
+                  "phone": "9876543210"
+                },
+                "location": {
+                  "address": {
+                    "area_code": "456010",
+                    "building": "12 Road",
+                    "city": "Ujjain",
+                    "country": "India",
+                    "locality": "Freeganj",
+                    "name": "Store Ujjain",
+                    "state": "Madhya Pradesh"
+                  },
+                  "gps": "23.1793,75.7849"
+                },
+                "person": {
+                  "name": "Onetab Store"
+                },
+                "time": {
+                  "duration": "PT12H"
+                }
+              },
+              "state": {
+                "descriptor": {
+                  "code": "Pending"
+                }
+              },
+              "tags": [
+                {
+                  "code": "linked_provider",
+                  "list": [
+                    {
+                      "code": "id",
+                      "value": "ONETAB-1"
+                    },
+                    {
+                      "code": "name",
+                      "value": "Onetab Store"
+                    },
+                    {
+                      "code": "address",
+                      "value": "Store Ujjain,12 Road,Freeganj,Ujjain,Madhya Pradesh,456010"
+                    }
+                  ]
+                },
+                {
+                  "code": "linked_order",
+                  "list": [
+                    {
+                      "code": "id",
+                      "value": "WB-BASELINE-8151"
+                    },
+                    {
+                      "code": "currency",
+                      "value": "INR"
+                    },
+                    {
+                      "code": "declared_value",
+                      "value": "1200"
+                    },
+                    {
+                      "code": "weight_unit",
+                      "value": "kilogram"
+                    },
+                    {
+                      "code": "weight_value",
+                      "value": "2.5"
+                    },
+                    {
+                      "code": "dim_unit",
+                      "value": "centimeter"
+                    },
+                    {
+                      "code": "length",
+                      "value": "30"
+                    },
+                    {
+                      "code": "breadth",
+                      "value": "20"
+                    },
+                    {
+                      "code": "height",
+                      "value": "15"
+                    },
+                    {
+                      "code": "shipment_type",
+                      "value": "box"
+                    }
+                  ]
+                },
+                {
+                  "code": "linked_order_item",
+                  "list": [
+                    {
+                      "code": "category",
+                      "value": "Grocery"
+                    },
+                    {
+                      "code": "name",
+                      "value": "Item 1"
+                    },
+                    {
+                      "code": "currency",
+                      "value": "INR"
+                    },
+                    {
+                      "code": "value",
+                      "value": "1200"
+                    },
+                    {
+                      "code": "quantity",
+                      "value": "1"
+                    },
+                    {
+                      "code": "weight_unit",
+                      "value": "kilogram"
+                    },
+                    {
+                      "code": "weight_value",
+                      "value": "2.5"
+                    }
+                  ]
+                },
+                {
+                  "code": "state",
+                  "list": [
+                    {
+                      "code": "ready_to_ship",
+                      "value": "no"
+                    }
+                  ]
+                },
+                {
+                  "code": "rto_action",
+                  "list": [
+                    {
+                      "code": "return_to_origin",
+                      "value": "no"
+                    }
+                  ]
+                },
+                {
+                  "code": "weather_check",
+                  "list": [
+                    {
+                      "code": "raining",
+                      "value": "no"
+                    }
+                  ]
+                }
+              ],
+              "tracking": true,
+              "type": "Delivery"
+            }
+          ],
+          "id": "ORD-1795763698957",
+          "items": [
+            {
+              "category_id": "Standard Delivery",
+              "descriptor": {
+                "code": "P2H2P"
+              },
+              "fulfillment_id": "1",
+              "id": "I1",
+              "time": {
+                "duration": "P2D",
+                "label": "TAT",
+                "timestamp": "2026-11-29"
+              }
+            }
+          ],
+          "payment": {
+            "@ondc/org/settlement_basis": "invoicing",
+            "@ondc/org/settlement_window": "P15D",
+            "collected_by": "BAP",
+            "type": "POST-FULFILLMENT"
+          },
+          "provider": {
+            "id": "P1",
+            "locations": [
+              {
+                "id": "L1"
+              }
+            ]
+          },
+          "quote": {
+            "breakup": [
+              {
+                "@ondc/org/item_id": "I1",
+                "@ondc/org/title_type": "delivery",
+                "price": {
+                  "currency": "INR",
+                  "value": "50.00"
+                }
+              },
+              {
+                "@ondc/org/item_id": "I1",
+                "@ondc/org/title_type": "tax",
+                "price": {
+                  "currency": "INR",
+                  "value": "9.00"
+                }
+              }
+            ],
+            "price": {
+              "currency": "INR",
+              "value": "59.00"
+            }
+          },
+          "state": "Accepted",
+          "tags": [
+            {
+              "code": "bpp_terms",
+              "list": [
+                {
+                  "code": "max_liability",
+                  "value": "2"
+                },
+                {
+                  "code": "max_liability_cap",
+                  "value": "10000"
+                },
+                {
+                  "code": "mandatory_arbitration",
+                  "value": "false"
+                },
+                {
+                  "code": "court_jurisdiction",
+                  "value": "Bengaluru"
+                },
+                {
+                  "code": "delay_interest",
+                  "value": "1000"
+                },
+                {
+                  "code": "static_terms",
+                  "value": "https://github.com/ONDC-Official/protocol-network-extension/discussions/79"
+                }
+              ]
+            },
+            {
+              "code": "bap_terms",
+              "list": [
+                {
+                  "code": "accept_bpp_terms",
+                  "value": "Y"
+                }
+              ]
+            }
+          ],
+          "updated_at": "2026-11-27T07:14:59.104Z"
+        }
+      }
+    },
+    "res": {
+      "response": {
+        "context": {
+          "action": "on_confirm",
+          "bap_id": "ondc.onetab.ai",
+          "bap_uri": "https://ondc.onetab.ai/ondc-seller-v2",
+          "bpp_id": "workbench.ondc.tech",
+          "bpp_uri": "https://workbench.ondc.tech/api-service/nic2004:60232/1.2.0/seller",
+          "city": "std:0734",
+          "core_version": "1.2.0",
+          "country": "IND",
+          "domain": "nic2004:60232",
+          "message_id": "e09ecf2a-ba5e-43e7-8cff-ed91c6d165b8",
+          "timestamp": "2026-11-27T07:14:59.104Z",
+          "transaction_id": "19115b40-b849-4326-9a31-5aab5a42dc95",
+          "ttl": "PT30S"
+        },
+        "message": {
+          "ack": {
+            "status": "ACK"
+          }
+        }
+      }
+    }
+  },
+  {
+    "req": {
+      "context": {
+        "action": "update",
+        "bap_id": "ondc.onetab.ai",
+        "bap_uri": "https://ondc.onetab.ai/ondc-seller-v2",
+        "bpp_id": "workbench.ondc.tech",
+        "bpp_uri": "https://workbench.ondc.tech/api-service/nic2004:60232/1.2.0/seller",
+        "city": "std:0734",
+        "core_version": "1.2.0",
+        "country": "IND",
+        "domain": "nic2004:60232",
+        "message_id": "14b57ca0-b93d-42a9-aa9a-743a3157853e",
+        "timestamp": "2026-11-27T07:14:59.209Z",
+        "transaction_id": "19115b40-b849-4326-9a31-5aab5a42dc95",
+        "ttl": "PT30S"
+      },
+      "message": {
+        "order": {
+          "fulfillments": [
+            {
+              "id": "1",
+              "start": {
+                "instructions": {
+                  "code": "2",
+                  "short_desc": "123456"
+                }
+              },
+              "tags": [
+                {
+                  "code": "state",
+                  "list": [
+                    {
+                      "code": "ready_to_ship",
+                      "value": "yes"
+                    }
+                  ]
+                }
+              ],
+              "type": "Delivery"
+            }
+          ],
+          "id": "ORD-1795763698957",
+          "items": [
+            {
+              "category_id": "Standard Delivery",
+              "descriptor": {
+                "code": "P2H2P"
+              },
+              "id": "I1"
+            }
+          ],
+          "updated_at": "2026-11-27T07:14:59.209Z"
+        },
+        "update_target": "fulfillment"
+      }
+    },
+    "res": {
+      "response": {
+        "context": {
+          "action": "update",
+          "bap_id": "ondc.onetab.ai",
+          "bap_uri": "https://ondc.onetab.ai/ondc-seller-v2",
+          "bpp_id": "workbench.ondc.tech",
+          "bpp_uri": "https://workbench.ondc.tech/api-service/nic2004:60232/1.2.0/seller",
+          "city": "std:0734",
+          "core_version": "1.2.0",
+          "country": "IND",
+          "domain": "nic2004:60232",
+          "message_id": "14b57ca0-b93d-42a9-aa9a-743a3157853e",
+          "timestamp": "2026-11-27T07:14:59.209Z",
+          "transaction_id": "19115b40-b849-4326-9a31-5aab5a42dc95",
+          "ttl": "PT30S"
+        },
+        "message": {
+          "ack": {
+            "status": "ACK"
+          }
+        }
+      }
+    }
+  },
+  {
+    "req": {
+      "context": {
+        "action": "on_update",
+        "bap_id": "ondc.onetab.ai",
+        "bap_uri": "https://ondc.onetab.ai/ondc-seller-v2",
+        "bpp_id": "workbench.ondc.tech",
+        "bpp_uri": "https://workbench.ondc.tech/api-service/nic2004:60232/1.2.0/seller",
+        "city": "std:0734",
+        "core_version": "1.2.0",
+        "country": "IND",
+        "domain": "nic2004:60232",
+        "message_id": "14b57ca0-b93d-42a9-aa9a-743a3157853e",
+        "timestamp": "2026-11-27T07:14:59.353Z",
+        "transaction_id": "19115b40-b849-4326-9a31-5aab5a42dc95",
+        "ttl": "PT30S"
+      },
+      "message": {
+        "order": {
+          "@ondc/org/linked_order": {
+            "items": [
+              {
+                "category_id": "Grocery",
+                "descriptor": {
+                  "name": "Item 1"
+                },
+                "price": {
+                  "currency": "INR",
+                  "value": "1200.00"
+                },
+                "quantity": {
+                  "count": 1,
+                  "measure": {
+                    "unit": "kilogram",
+                    "value": 2.5
+                  }
+                }
+              }
+            ],
+            "order": {
+              "dimensions": {
+                "breadth": {
+                  "unit": "centimeter",
+                  "value": 20
+                },
+                "height": {
+                  "unit": "centimeter",
+                  "value": 15
+                },
+                "length": {
+                  "unit": "centimeter",
+                  "value": 30
+                }
+              },
+              "id": "WB-BASELINE-8151",
+              "weight": {
+                "unit": "kilogram",
+                "value": 2.5
+              }
+            },
+            "provider": {
+              "address": {
+                "area_code": "456010",
+                "building": "12 Road",
+                "city": "Ujjain",
+                "country": "India",
+                "locality": "Freeganj",
+                "name": "Store Ujjain",
+                "state": "Madhya Pradesh"
+              },
+              "descriptor": {
+                "name": "Onetab Store"
+              }
+            }
+          },
+          "billing": {
+            "address": {
+              "area_code": "452001",
+              "building": "Building A",
+              "city": "Indore",
+              "country": "India",
+              "locality": "Local Area",
+              "name": "Onetab Office",
+              "state": "Madhya Pradesh"
+            },
+            "created_at": "2026-11-27T07:14:58.711Z",
+            "email": "billing@ondc.org",
+            "name": "Onetab",
+            "phone": "9876543210",
+            "tax_number": "23AAECO3224B1Z6",
+            "updated_at": "2026-11-27T07:14:58.711Z"
+          },
+          "cancellation_terms": [
+            {
+              "cancellation_fee": {
+                "amount": {
+                  "currency": "INR",
+                  "value": "0.00"
+                },
+                "percentage": "0.00"
+              },
+              "fulfillment_state": {
+                "descriptor": {
+                  "code": "Pending",
+                  "short_desc": "008"
+                }
+              }
+            },
+            {
+              "cancellation_fee": {
+                "amount": {
+                  "currency": "INR",
+                  "value": "50.00"
+                },
+                "percentage": "100.00"
+              },
+              "fulfillment_state": {
+                "descriptor": {
+                  "code": "Agent-assigned",
+                  "short_desc": "001,003"
+                }
+              }
+            },
+            {
+              "cancellation_fee": {
+                "amount": {
+                  "currency": "INR",
+                  "value": "50.00"
+                },
+                "percentage": "100.00"
+              },
+              "fulfillment_state": {
+                "descriptor": {
+                  "code": "Order-picked-up",
+                  "short_desc": "001,003"
+                }
+              }
+            },
+            {
+              "cancellation_fee": {
+                "amount": {
+                  "currency": "INR",
+                  "value": "50.00"
+                },
+                "percentage": "100.00"
+              },
+              "fulfillment_state": {
+                "descriptor": {
+                  "code": "Out-for-delivery",
+                  "short_desc": "011,012,013,014,015"
+                }
+              }
+            }
+          ],
+          "created_at": "2026-11-27T07:14:58.972Z",
+          "fulfillments": [
+            {
+              "end": {
+                "contact": {
+                  "email": "buyer@onetab.ai",
+                  "phone": "9123456780"
+                },
+                "location": {
+                  "address": {
+                    "area_code": "452010",
+                    "building": "Sunrise",
+                    "city": "Indore",
+                    "country": "India",
+                    "locality": "Vijay Nagar",
+                    "name": "Flat 4B",
+                    "state": "Madhya Pradesh"
+                  },
+                  "gps": "22.7196,75.8577"
+                },
+                "person": {
+                  "name": "Buyer Person"
+                },
+                "time": {
+                  "range": {
+                    "end": "2026-11-28T07:14:59.353Z",
+                    "start": "2026-11-27T19:14:59.353Z"
+                  }
+                }
+              },
+              "id": "1",
+              "start": {
+                "contact": {
+                  "email": "store@onetab.ai",
+                  "phone": "9876543210"
+                },
+                "location": {
+                  "address": {
+                    "area_code": "456010",
+                    "building": "12 Road",
+                    "city": "Ujjain",
+                    "country": "India",
+                    "locality": "Freeganj",
+                    "name": "Store Ujjain",
+                    "state": "Madhya Pradesh"
+                  },
+                  "gps": "23.1793,75.7849"
+                },
+                "person": {
+                  "name": "Onetab Store"
+                },
+                "time": {
+                  "duration": "PT12H",
+                  "range": {
+                    "end": "2026-11-27T19:14:59.353Z",
+                    "start": "2026-11-27T07:14:59.353Z"
+                  }
+                }
+              },
+              "state": {
+                "descriptor": {
+                  "code": "Searching-for-Agent"
+                }
+              },
+              "tags": [
+                {
+                  "code": "linked_provider",
+                  "list": [
+                    {
+                      "code": "id",
+                      "value": "ONETAB-1"
+                    },
+                    {
+                      "code": "name",
+                      "value": "Onetab Store"
+                    },
+                    {
+                      "code": "address",
+                      "value": "Store Ujjain,12 Road,Freeganj,Ujjain,Madhya Pradesh,456010"
+                    }
+                  ]
+                },
+                {
+                  "code": "linked_order",
+                  "list": [
+                    {
+                      "code": "id",
+                      "value": "WB-BASELINE-8151"
+                    },
+                    {
+                      "code": "currency",
+                      "value": "INR"
+                    },
+                    {
+                      "code": "declared_value",
+                      "value": "1200"
+                    },
+                    {
+                      "code": "weight_unit",
+                      "value": "kilogram"
+                    },
+                    {
+                      "code": "weight_value",
+                      "value": "2.5"
+                    },
+                    {
+                      "code": "dim_unit",
+                      "value": "centimeter"
+                    },
+                    {
+                      "code": "length",
+                      "value": "30"
+                    },
+                    {
+                      "code": "breadth",
+                      "value": "20"
+                    },
+                    {
+                      "code": "height",
+                      "value": "15"
+                    },
+                    {
+                      "code": "shipment_type",
+                      "value": "box"
+                    }
+                  ]
+                },
+                {
+                  "code": "linked_order_item",
+                  "list": [
+                    {
+                      "code": "category",
+                      "value": "Grocery"
+                    },
+                    {
+                      "code": "name",
+                      "value": "Item 1"
+                    },
+                    {
+                      "code": "currency",
+                      "value": "INR"
+                    },
+                    {
+                      "code": "value",
+                      "value": "1200"
+                    },
+                    {
+                      "code": "quantity",
+                      "value": "1"
+                    },
+                    {
+                      "code": "weight_unit",
+                      "value": "kilogram"
+                    },
+                    {
+                      "code": "weight_value",
+                      "value": "2.5"
+                    }
+                  ]
+                }
+              ],
+              "tracking": true,
+              "type": "Delivery"
+            }
+          ],
+          "id": "ORD-1795763698957",
+          "items": [
+            {
+              "category_id": "Standard Delivery",
+              "descriptor": {
+                "code": "P2H2P"
+              },
+              "fulfillment_id": "1",
+              "id": "I1",
+              "time": {
+                "duration": "P2D",
+                "label": "TAT",
+                "timestamp": "2026-11-29"
+              }
+            }
+          ],
+          "payment": {
+            "@ondc/org/settlement_basis": "invoicing",
+            "@ondc/org/settlement_window": "P15D",
+            "collected_by": "BAP",
+            "type": "POST-FULFILLMENT"
+          },
+          "provider": {
+            "id": "P1",
+            "locations": [
+              {
+                "id": "L1"
+              }
+            ]
+          },
+          "quote": {
+            "breakup": [
+              {
+                "@ondc/org/item_id": "I1",
+                "@ondc/org/title_type": "delivery",
+                "price": {
+                  "currency": "INR",
+                  "value": "50.00"
+                }
+              },
+              {
+                "@ondc/org/item_id": "I1",
+                "@ondc/org/title_type": "tax",
+                "price": {
+                  "currency": "INR",
+                  "value": "9.00"
+                }
+              }
+            ],
+            "price": {
+              "currency": "INR",
+              "value": "59.00"
+            }
+          },
+          "state": "Accepted",
+          "tags": [
+            {
+              "code": "bpp_terms",
+              "list": [
+                {
+                  "code": "max_liability",
+                  "value": "2"
+                },
+                {
+                  "code": "max_liability_cap",
+                  "value": "10000"
+                },
+                {
+                  "code": "mandatory_arbitration",
+                  "value": "false"
+                },
+                {
+                  "code": "court_jurisdiction",
+                  "value": "Bengaluru"
+                },
+                {
+                  "code": "delay_interest",
+                  "value": "1000"
+                },
+                {
+                  "code": "static_terms",
+                  "value": "https://github.com/ONDC-Official/protocol-network-extension/discussions/79"
+                }
+              ]
+            },
+            {
+              "code": "bap_terms",
+              "list": [
+                {
+                  "code": "accept_bpp_terms",
+                  "value": "Y"
+                }
+              ]
+            }
+          ],
+          "updated_at": "2026-11-27T07:14:59.353Z"
+        }
+      }
+    },
+    "res": {
+      "response": {
+        "context": {
+          "action": "on_update",
+          "bap_id": "ondc.onetab.ai",
+          "bap_uri": "https://ondc.onetab.ai/ondc-seller-v2",
+          "bpp_id": "workbench.ondc.tech",
+          "bpp_uri": "https://workbench.ondc.tech/api-service/nic2004:60232/1.2.0/seller",
+          "city": "std:0734",
+          "core_version": "1.2.0",
+          "country": "IND",
+          "domain": "nic2004:60232",
+          "message_id": "14b57ca0-b93d-42a9-aa9a-743a3157853e",
+          "timestamp": "2026-11-27T07:14:59.353Z",
+          "transaction_id": "19115b40-b849-4326-9a31-5aab5a42dc95",
+          "ttl": "PT30S"
+        },
+        "message": {
+          "ack": {
+            "status": "ACK"
+          }
+        }
+      }
+    }
+  },
+  {
+    "req": {
+      "context": {
+        "action": "on_status",
+        "bap_id": "ondc.onetab.ai",
+        "bap_uri": "https://ondc.onetab.ai/ondc-seller-v2",
+        "bpp_id": "workbench.ondc.tech",
+        "bpp_uri": "https://workbench.ondc.tech/api-service/nic2004:60232/1.2.0/seller",
+        "city": "std:0734",
+        "core_version": "1.2.0",
+        "country": "IND",
+        "domain": "nic2004:60232",
+        "message_id": "80428c21-ec0a-48c5-a0bc-cbd661ebd949",
+        "timestamp": "2026-11-27T07:14:59.930Z",
+        "transaction_id": "19115b40-b849-4326-9a31-5aab5a42dc95",
+        "ttl": "PT30S"
+      },
+      "message": {
+        "order": {
+          "@ondc/org/linked_order": {
+            "items": [
+              {
+                "category_id": "Grocery",
+                "descriptor": {
+                  "name": "Item 1"
+                },
+                "price": {
+                  "currency": "INR",
+                  "value": "1200.00"
+                },
+                "quantity": {
+                  "count": 1,
+                  "measure": {
+                    "unit": "kilogram",
+                    "value": 2.5
+                  }
+                }
+              }
+            ],
+            "order": {
+              "dimensions": {
+                "breadth": {
+                  "unit": "centimeter",
+                  "value": 20
+                },
+                "height": {
+                  "unit": "centimeter",
+                  "value": 15
+                },
+                "length": {
+                  "unit": "centimeter",
+                  "value": 30
+                }
+              },
+              "id": "WB-BASELINE-8151",
+              "weight": {
+                "unit": "kilogram",
+                "value": 2.5
+              }
+            },
+            "provider": {
+              "address": {
+                "area_code": "456010",
+                "building": "12 Road",
+                "city": "Ujjain",
+                "country": "India",
+                "locality": "Freeganj",
+                "name": "Store Ujjain",
+                "state": "Madhya Pradesh"
+              },
+              "descriptor": {
+                "name": "Onetab Store"
+              }
+            }
+          },
+          "billing": {
+            "address": {
+              "area_code": "452001",
+              "building": "Building A",
+              "city": "Indore",
+              "country": "India",
+              "locality": "Local Area",
+              "name": "Onetab Office",
+              "state": "Madhya Pradesh"
+            },
+            "created_at": "2026-11-27T07:14:58.711Z",
+            "email": "billing@ondc.org",
+            "name": "Onetab",
+            "phone": "9876543210",
+            "tax_number": "23AAECO3224B1Z6",
+            "updated_at": "2026-11-27T07:14:58.711Z"
+          },
+          "cancellation_terms": [
+            {
+              "cancellation_fee": {
+                "amount": {
+                  "currency": "INR",
+                  "value": "0.00"
+                },
+                "percentage": "0.00"
+              },
+              "fulfillment_state": {
+                "descriptor": {
+                  "code": "Pending",
+                  "short_desc": "008"
+                }
+              }
+            },
+            {
+              "cancellation_fee": {
+                "amount": {
+                  "currency": "INR",
+                  "value": "50.00"
+                },
+                "percentage": "100.00"
+              },
+              "fulfillment_state": {
+                "descriptor": {
+                  "code": "Agent-assigned",
+                  "short_desc": "001,003"
+                }
+              }
+            },
+            {
+              "cancellation_fee": {
+                "amount": {
+                  "currency": "INR",
+                  "value": "50.00"
+                },
+                "percentage": "100.00"
+              },
+              "fulfillment_state": {
+                "descriptor": {
+                  "code": "Order-picked-up",
+                  "short_desc": "001,003"
+                }
+              }
+            },
+            {
+              "cancellation_fee": {
+                "amount": {
+                  "currency": "INR",
+                  "value": "50.00"
+                },
+                "percentage": "100.00"
+              },
+              "fulfillment_state": {
+                "descriptor": {
+                  "code": "Out-for-delivery",
+                  "short_desc": "011,012,013,014,015"
+                }
+              }
+            }
+          ],
+          "created_at": "2026-11-27T07:14:58.972Z",
+          "fulfillments": [
+            {
+              "agent": {
+                "name": "agent_name",
+                "phone": "9886098860"
+              },
+              "end": {
+                "contact": {
+                  "email": "buyer@onetab.ai",
+                  "phone": "9123456780"
+                },
+                "location": {
+                  "address": {
+                    "area_code": "452010",
+                    "building": "Sunrise",
+                    "city": "Indore",
+                    "country": "India",
+                    "locality": "Vijay Nagar",
+                    "name": "Flat 4B",
+                    "state": "Madhya Pradesh"
+                  },
+                  "gps": "22.7196,75.8577"
+                },
+                "person": {
+                  "name": "Buyer Person"
+                },
+                "time": {
+                  "range": {
+                    "end": "2026-11-28T07:14:59.353Z",
+                    "start": "2026-11-27T19:14:59.353Z"
+                  }
+                }
+              },
+              "id": "1",
+              "start": {
+                "contact": {
+                  "email": "store@onetab.ai",
+                  "phone": "9876543210"
+                },
+                "location": {
+                  "address": {
+                    "area_code": "456010",
+                    "building": "12 Road",
+                    "city": "Ujjain",
+                    "country": "India",
+                    "locality": "Freeganj",
+                    "name": "Store Ujjain",
+                    "state": "Madhya Pradesh"
+                  },
+                  "gps": "23.1793,75.7849"
+                },
+                "person": {
+                  "name": "Onetab Store"
+                },
+                "time": {
+                  "duration": "PT12H",
+                  "range": {
+                    "end": "2026-11-27T19:14:59.353Z",
+                    "start": "2026-11-27T07:14:59.353Z"
+                  }
+                }
+              },
+              "state": {
+                "descriptor": {
+                  "code": "Agent-assigned"
+                }
+              },
+              "tags": [
+                {
+                  "code": "linked_provider",
+                  "list": [
+                    {
+                      "code": "id",
+                      "value": "ONETAB-1"
+                    },
+                    {
+                      "code": "name",
+                      "value": "Onetab Store"
+                    },
+                    {
+                      "code": "address",
+                      "value": "Store Ujjain,12 Road,Freeganj,Ujjain,Madhya Pradesh,456010"
+                    }
+                  ]
+                },
+                {
+                  "code": "linked_order",
+                  "list": [
+                    {
+                      "code": "id",
+                      "value": "WB-BASELINE-8151"
+                    },
+                    {
+                      "code": "currency",
+                      "value": "INR"
+                    },
+                    {
+                      "code": "declared_value",
+                      "value": "1200"
+                    },
+                    {
+                      "code": "weight_unit",
+                      "value": "kilogram"
+                    },
+                    {
+                      "code": "weight_value",
+                      "value": "2.5"
+                    },
+                    {
+                      "code": "dim_unit",
+                      "value": "centimeter"
+                    },
+                    {
+                      "code": "length",
+                      "value": "30"
+                    },
+                    {
+                      "code": "breadth",
+                      "value": "20"
+                    },
+                    {
+                      "code": "height",
+                      "value": "15"
+                    },
+                    {
+                      "code": "shipment_type",
+                      "value": "box"
+                    }
+                  ]
+                },
+                {
+                  "code": "linked_order_item",
+                  "list": [
+                    {
+                      "code": "category",
+                      "value": "Grocery"
+                    },
+                    {
+                      "code": "name",
+                      "value": "Item 1"
+                    },
+                    {
+                      "code": "currency",
+                      "value": "INR"
+                    },
+                    {
+                      "code": "value",
+                      "value": "1200"
+                    },
+                    {
+                      "code": "quantity",
+                      "value": "1"
+                    },
+                    {
+                      "code": "weight_unit",
+                      "value": "kilogram"
+                    },
+                    {
+                      "code": "weight_value",
+                      "value": "2.5"
+                    }
+                  ]
+                }
+              ],
+              "tracking": true,
+              "type": "Delivery",
+              "vehicle": {
+                "registration": "3LVJ945"
+              }
+            }
+          ],
+          "id": "ORD-1795763698957",
+          "items": [
+            {
+              "category_id": "Standard Delivery",
+              "descriptor": {
+                "code": "P2H2P"
+              },
+              "fulfillment_id": "1",
+              "id": "I1",
+              "time": {
+                "duration": "P2D",
+                "label": "TAT",
+                "timestamp": "2026-11-29"
+              }
+            }
+          ],
+          "payment": {
+            "@ondc/org/settlement_basis": "invoicing",
+            "@ondc/org/settlement_window": "P15D",
+            "collected_by": "BAP",
+            "status": "NOT-PAID",
+            "type": "POST-FULFILLMENT"
+          },
+          "provider": {
+            "id": "P1",
+            "locations": [
+              {
+                "id": "L1"
+              }
+            ]
+          },
+          "quote": {
+            "breakup": [
+              {
+                "@ondc/org/item_id": "I1",
+                "@ondc/org/title_type": "delivery",
+                "price": {
+                  "currency": "INR",
+                  "value": "50.00"
+                }
+              },
+              {
+                "@ondc/org/item_id": "I1",
+                "@ondc/org/title_type": "tax",
+                "price": {
+                  "currency": "INR",
+                  "value": "9.00"
+                }
+              }
+            ],
+            "price": {
+              "currency": "INR",
+              "value": "59.00"
+            }
+          },
+          "state": "In-progress",
+          "tags": [
+            {
+              "code": "bpp_terms",
+              "list": [
+                {
+                  "code": "max_liability",
+                  "value": "2"
+                },
+                {
+                  "code": "max_liability_cap",
+                  "value": "10000"
+                },
+                {
+                  "code": "mandatory_arbitration",
+                  "value": "false"
+                },
+                {
+                  "code": "court_jurisdiction",
+                  "value": "Bengaluru"
+                },
+                {
+                  "code": "delay_interest",
+                  "value": "1000"
+                },
+                {
+                  "code": "static_terms",
+                  "value": "https://github.com/ONDC-Official/protocol-network-extension/discussions/79"
+                }
+              ]
+            },
+            {
+              "code": "bap_terms",
+              "list": [
+                {
+                  "code": "accept_bpp_terms",
+                  "value": "Y"
+                }
+              ]
+            }
+          ],
+          "updated_at": "2026-11-27T07:14:59.930Z"
+        }
+      }
+    },
+    "res": {
+      "response": {
+        "context": {
+          "action": "on_status",
+          "bap_id": "ondc.onetab.ai",
+          "bap_uri": "https://ondc.onetab.ai/ondc-seller-v2",
+          "bpp_id": "workbench.ondc.tech",
+          "bpp_uri": "https://workbench.ondc.tech/api-service/nic2004:60232/1.2.0/seller",
+          "city": "std:0734",
+          "core_version": "1.2.0",
+          "country": "IND",
+          "domain": "nic2004:60232",
+          "message_id": "80428c21-ec0a-48c5-a0bc-cbd661ebd949",
+          "timestamp": "2026-11-27T07:14:59.930Z",
+          "transaction_id": "19115b40-b849-4326-9a31-5aab5a42dc95",
+          "ttl": "PT30S"
+        },
+        "message": {
+          "ack": {
+            "status": "ACK"
+          }
+        }
+      }
+    }
+  },
+  {
+    "req": {
+      "context": {
+        "action": "on_status",
+        "bap_id": "ondc.onetab.ai",
+        "bap_uri": "https://ondc.onetab.ai/ondc-seller-v2",
+        "bpp_id": "workbench.ondc.tech",
+        "bpp_uri": "https://workbench.ondc.tech/api-service/nic2004:60232/1.2.0/seller",
+        "city": "std:0734",
+        "core_version": "1.2.0",
+        "country": "IND",
+        "domain": "nic2004:60232",
+        "message_id": "6e2807c6-6e59-4ee8-8e2f-be540b20a7c5",
+        "timestamp": "2026-11-27T07:15:01.091Z",
+        "transaction_id": "19115b40-b849-4326-9a31-5aab5a42dc95",
+        "ttl": "PT30S"
+      },
+      "message": {
+        "order": {
+          "@ondc/org/linked_order": {
+            "items": [
+              {
+                "category_id": "Grocery",
+                "descriptor": {
+                  "name": "Item 1"
+                },
+                "price": {
+                  "currency": "INR",
+                  "value": "1200.00"
+                },
+                "quantity": {
+                  "count": 1,
+                  "measure": {
+                    "unit": "kilogram",
+                    "value": 2.5
+                  }
+                }
+              }
+            ],
+            "order": {
+              "dimensions": {
+                "breadth": {
+                  "unit": "centimeter",
+                  "value": 20
+                },
+                "height": {
+                  "unit": "centimeter",
+                  "value": 15
+                },
+                "length": {
+                  "unit": "centimeter",
+                  "value": 30
+                }
+              },
+              "id": "WB-BASELINE-8151",
+              "weight": {
+                "unit": "kilogram",
+                "value": 2.5
+              }
+            },
+            "provider": {
+              "address": {
+                "area_code": "456010",
+                "building": "12 Road",
+                "city": "Ujjain",
+                "country": "India",
+                "locality": "Freeganj",
+                "name": "Store Ujjain",
+                "state": "Madhya Pradesh"
+              },
+              "descriptor": {
+                "name": "Onetab Store"
+              }
+            }
+          },
+          "billing": {
+            "address": {
+              "area_code": "452001",
+              "building": "Building A",
+              "city": "Indore",
+              "country": "India",
+              "locality": "Local Area",
+              "name": "Onetab Office",
+              "state": "Madhya Pradesh"
+            },
+            "created_at": "2026-11-27T07:14:58.711Z",
+            "email": "billing@ondc.org",
+            "name": "Onetab",
+            "phone": "9876543210",
+            "tax_number": "23AAECO3224B1Z6",
+            "updated_at": "2026-11-27T07:14:58.711Z"
+          },
+          "cancellation_terms": [
+            {
+              "cancellation_fee": {
+                "amount": {
+                  "currency": "INR",
+                  "value": "0.00"
+                },
+                "percentage": "0.00"
+              },
+              "fulfillment_state": {
+                "descriptor": {
+                  "code": "Pending",
+                  "short_desc": "008"
+                }
+              }
+            },
+            {
+              "cancellation_fee": {
+                "amount": {
+                  "currency": "INR",
+                  "value": "50.00"
+                },
+                "percentage": "100.00"
+              },
+              "fulfillment_state": {
+                "descriptor": {
+                  "code": "Agent-assigned",
+                  "short_desc": "001,003"
+                }
+              }
+            },
+            {
+              "cancellation_fee": {
+                "amount": {
+                  "currency": "INR",
+                  "value": "50.00"
+                },
+                "percentage": "100.00"
+              },
+              "fulfillment_state": {
+                "descriptor": {
+                  "code": "Order-picked-up",
+                  "short_desc": "001,003"
+                }
+              }
+            },
+            {
+              "cancellation_fee": {
+                "amount": {
+                  "currency": "INR",
+                  "value": "50.00"
+                },
+                "percentage": "100.00"
+              },
+              "fulfillment_state": {
+                "descriptor": {
+                  "code": "Out-for-delivery",
+                  "short_desc": "011,012,013,014,015"
+                }
+              }
+            }
+          ],
+          "created_at": "2026-11-27T07:14:58.972Z",
+          "fulfillments": [
+            {
+              "agent": {
+                "name": "agent_name",
+                "phone": "9886098860"
+              },
+              "end": {
+                "contact": {
+                  "email": "buyer@onetab.ai",
+                  "phone": "9123456780"
+                },
+                "location": {
+                  "address": {
+                    "area_code": "452010",
+                    "building": "Sunrise",
+                    "city": "Indore",
+                    "country": "India",
+                    "locality": "Vijay Nagar",
+                    "name": "Flat 4B",
+                    "state": "Madhya Pradesh"
+                  },
+                  "gps": "22.7196,75.8577"
+                },
+                "person": {
+                  "name": "Buyer Person"
+                },
+                "time": {
+                  "range": {
+                    "end": "2026-11-28T07:14:59.353Z",
+                    "start": "2026-11-27T19:14:59.353Z"
+                  }
+                }
+              },
+              "id": "1",
+              "start": {
+                "contact": {
+                  "email": "store@onetab.ai",
+                  "phone": "9876543210"
+                },
+                "location": {
+                  "address": {
+                    "area_code": "456010",
+                    "building": "12 Road",
+                    "city": "Ujjain",
+                    "country": "India",
+                    "locality": "Freeganj",
+                    "name": "Store Ujjain",
+                    "state": "Madhya Pradesh"
+                  },
+                  "gps": "23.1793,75.7849"
+                },
+                "person": {
+                  "name": "Onetab Store"
+                },
+                "time": {
+                  "duration": "PT12H",
+                  "range": {
+                    "end": "2026-11-27T19:14:59.353Z",
+                    "start": "2026-11-27T07:14:59.353Z"
+                  },
+                  "timestamp": "2026-11-27T07:15:01.091Z"
+                }
+              },
+              "state": {
+                "descriptor": {
+                  "code": "Order-picked-up"
+                }
+              },
+              "tags": [
+                {
+                  "code": "linked_provider",
+                  "list": [
+                    {
+                      "code": "id",
+                      "value": "ONETAB-1"
+                    },
+                    {
+                      "code": "name",
+                      "value": "Onetab Store"
+                    },
+                    {
+                      "code": "address",
+                      "value": "Store Ujjain,12 Road,Freeganj,Ujjain,Madhya Pradesh,456010"
+                    }
+                  ]
+                },
+                {
+                  "code": "linked_order",
+                  "list": [
+                    {
+                      "code": "id",
+                      "value": "WB-BASELINE-8151"
+                    },
+                    {
+                      "code": "currency",
+                      "value": "INR"
+                    },
+                    {
+                      "code": "declared_value",
+                      "value": "1200"
+                    },
+                    {
+                      "code": "weight_unit",
+                      "value": "kilogram"
+                    },
+                    {
+                      "code": "weight_value",
+                      "value": "2.5"
+                    },
+                    {
+                      "code": "dim_unit",
+                      "value": "centimeter"
+                    },
+                    {
+                      "code": "length",
+                      "value": "30"
+                    },
+                    {
+                      "code": "breadth",
+                      "value": "20"
+                    },
+                    {
+                      "code": "height",
+                      "value": "15"
+                    },
+                    {
+                      "code": "shipment_type",
+                      "value": "box"
+                    }
+                  ]
+                },
+                {
+                  "code": "linked_order_item",
+                  "list": [
+                    {
+                      "code": "category",
+                      "value": "Grocery"
+                    },
+                    {
+                      "code": "name",
+                      "value": "Item 1"
+                    },
+                    {
+                      "code": "currency",
+                      "value": "INR"
+                    },
+                    {
+                      "code": "value",
+                      "value": "1200"
+                    },
+                    {
+                      "code": "quantity",
+                      "value": "1"
+                    },
+                    {
+                      "code": "weight_unit",
+                      "value": "kilogram"
+                    },
+                    {
+                      "code": "weight_value",
+                      "value": "2.5"
+                    }
+                  ]
+                }
+              ],
+              "tracking": true,
+              "type": "Delivery",
+              "vehicle": {
+                "registration": "3LVJ945"
+              }
+            }
+          ],
+          "id": "ORD-1795763698957",
+          "items": [
+            {
+              "category_id": "Standard Delivery",
+              "descriptor": {
+                "code": "P2H2P"
+              },
+              "fulfillment_id": "1",
+              "id": "I1",
+              "time": {
+                "duration": "P2D",
+                "label": "TAT",
+                "timestamp": "2026-11-29"
+              }
+            }
+          ],
+          "payment": {
+            "@ondc/org/settlement_basis": "invoicing",
+            "@ondc/org/settlement_window": "P15D",
+            "collected_by": "BAP",
+            "status": "NOT-PAID",
+            "type": "POST-FULFILLMENT"
+          },
+          "provider": {
+            "id": "P1",
+            "locations": [
+              {
+                "id": "L1"
+              }
+            ]
+          },
+          "quote": {
+            "breakup": [
+              {
+                "@ondc/org/item_id": "I1",
+                "@ondc/org/title_type": "delivery",
+                "price": {
+                  "currency": "INR",
+                  "value": "50.00"
+                }
+              },
+              {
+                "@ondc/org/item_id": "I1",
+                "@ondc/org/title_type": "tax",
+                "price": {
+                  "currency": "INR",
+                  "value": "9.00"
+                }
+              }
+            ],
+            "price": {
+              "currency": "INR",
+              "value": "59.00"
+            }
+          },
+          "state": "In-progress",
+          "tags": [
+            {
+              "code": "bpp_terms",
+              "list": [
+                {
+                  "code": "max_liability",
+                  "value": "2"
+                },
+                {
+                  "code": "max_liability_cap",
+                  "value": "10000"
+                },
+                {
+                  "code": "mandatory_arbitration",
+                  "value": "false"
+                },
+                {
+                  "code": "court_jurisdiction",
+                  "value": "Bengaluru"
+                },
+                {
+                  "code": "delay_interest",
+                  "value": "1000"
+                },
+                {
+                  "code": "static_terms",
+                  "value": "https://github.com/ONDC-Official/protocol-network-extension/discussions/79"
+                }
+              ]
+            },
+            {
+              "code": "bap_terms",
+              "list": [
+                {
+                  "code": "accept_bpp_terms",
+                  "value": "Y"
+                }
+              ]
+            }
+          ],
+          "updated_at": "2026-11-27T07:15:01.091Z"
+        }
+      }
+    },
+    "res": {
+      "response": {
+        "context": {
+          "action": "on_status",
+          "bap_id": "ondc.onetab.ai",
+          "bap_uri": "https://ondc.onetab.ai/ondc-seller-v2",
+          "bpp_id": "workbench.ondc.tech",
+          "bpp_uri": "https://workbench.ondc.tech/api-service/nic2004:60232/1.2.0/seller",
+          "city": "std:0734",
+          "core_version": "1.2.0",
+          "country": "IND",
+          "domain": "nic2004:60232",
+          "message_id": "6e2807c6-6e59-4ee8-8e2f-be540b20a7c5",
+          "timestamp": "2026-11-27T07:15:01.091Z",
+          "transaction_id": "19115b40-b849-4326-9a31-5aab5a42dc95",
+          "ttl": "PT30S"
+        },
+        "message": {
+          "ack": {
+            "status": "ACK"
+          }
+        }
+      }
+    }
+  },
+  {
+    "req": {
+      "context": {
+        "action": "track",
+        "bap_id": "ondc.onetab.ai",
+        "bap_uri": "https://ondc.onetab.ai/ondc-seller-v2",
+        "bpp_id": "workbench.ondc.tech",
+        "bpp_uri": "https://workbench.ondc.tech/api-service/nic2004:60232/1.2.0/seller",
+        "city": "std:0734",
+        "core_version": "1.2.0",
+        "country": "IND",
+        "domain": "nic2004:60232",
+        "message_id": "22d7a54f-ec91-46a0-80d4-c9016d2cebb9",
+        "timestamp": "2026-11-27T07:15:05.437Z",
+        "transaction_id": "19115b40-b849-4326-9a31-5aab5a42dc95",
+        "ttl": "PT30S"
+      },
+      "message": {
+        "callback_url": "https://ondc.onetab.ai/ondc-seller-v2/on_track",
+        "order_id": "ORD-1795763698957"
+      }
+    },
+    "res": {
+      "response": {
+        "context": {
+          "action": "track",
+          "bap_id": "ondc.onetab.ai",
+          "bap_uri": "https://ondc.onetab.ai/ondc-seller-v2",
+          "bpp_id": "workbench.ondc.tech",
+          "bpp_uri": "https://workbench.ondc.tech/api-service/nic2004:60232/1.2.0/seller",
+          "city": "std:0734",
+          "core_version": "1.2.0",
+          "country": "IND",
+          "domain": "nic2004:60232",
+          "message_id": "22d7a54f-ec91-46a0-80d4-c9016d2cebb9",
+          "timestamp": "2026-11-27T07:15:05.437Z",
+          "transaction_id": "19115b40-b849-4326-9a31-5aab5a42dc95",
+          "ttl": "PT30S"
+        },
+        "message": {
+          "ack": {
+            "status": "ACK"
+          }
+        }
+      }
+    }
+  },
+  {
+    "req": {
+      "context": {
+        "action": "on_track",
+        "bap_id": "ondc.onetab.ai",
+        "bap_uri": "https://ondc.onetab.ai/ondc-seller-v2",
+        "bpp_id": "workbench.ondc.tech",
+        "bpp_uri": "https://workbench.ondc.tech/api-service/nic2004:60232/1.2.0/seller",
+        "city": "std:0734",
+        "core_version": "1.2.0",
+        "country": "IND",
+        "domain": "nic2004:60232",
+        "message_id": "22d7a54f-ec91-46a0-80d4-c9016d2cebb9",
+        "timestamp": "2026-11-27T07:15:05.744Z",
+        "transaction_id": "19115b40-b849-4326-9a31-5aab5a42dc95",
+        "ttl": "PT30S"
+      },
+      "message": {
+        "tracking": {
+          "id": "1",
+          "status": "active",
+          "tags": [
+            {
+              "code": "order",
+              "list": [
+                {
+                  "code": "id",
+                  "value": "ORD-1795763698957"
+                }
+              ]
+            },
+            {
+              "code": "config",
+              "list": [
+                {
+                  "code": "attr",
+                  "value": "tracking.url"
+                },
+                {
+                  "code": "type",
+                  "value": "deferred"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "res": {
+      "response": {
+        "context": {
+          "action": "on_track",
+          "bap_id": "ondc.onetab.ai",
+          "bap_uri": "https://ondc.onetab.ai/ondc-seller-v2",
+          "bpp_id": "workbench.ondc.tech",
+          "bpp_uri": "https://workbench.ondc.tech/api-service/nic2004:60232/1.2.0/seller",
+          "city": "std:0734",
+          "core_version": "1.2.0",
+          "country": "IND",
+          "domain": "nic2004:60232",
+          "message_id": "22d7a54f-ec91-46a0-80d4-c9016d2cebb9",
+          "timestamp": "2026-11-27T07:15:05.744Z",
+          "transaction_id": "19115b40-b849-4326-9a31-5aab5a42dc95",
+          "ttl": "PT30S"
+        },
+        "message": {
+          "ack": {
+            "status": "ACK"
+          }
+        }
+      }
+    }
+  },
+  {
+    "req": {
+      "context": {
+        "action": "on_status",
+        "bap_id": "ondc.onetab.ai",
+        "bap_uri": "https://ondc.onetab.ai/ondc-seller-v2",
+        "bpp_id": "workbench.ondc.tech",
+        "bpp_uri": "https://workbench.ondc.tech/api-service/nic2004:60232/1.2.0/seller",
+        "city": "std:0734",
+        "core_version": "1.2.0",
+        "country": "IND",
+        "domain": "nic2004:60232",
+        "message_id": "ce492a18-f428-416f-a1c1-2eba9c5c28c2",
+        "timestamp": "2026-11-27T07:15:07.659Z",
+        "transaction_id": "19115b40-b849-4326-9a31-5aab5a42dc95",
+        "ttl": "PT30S"
+      },
+      "message": {
+        "order": {
+          "@ondc/org/linked_order": {
+            "items": [
+              {
+                "category_id": "Grocery",
+                "descriptor": {
+                  "name": "Item 1"
+                },
+                "price": {
+                  "currency": "INR",
+                  "value": "1200.00"
+                },
+                "quantity": {
+                  "count": 1,
+                  "measure": {
+                    "unit": "kilogram",
+                    "value": 2.5
+                  }
+                }
+              }
+            ],
+            "order": {
+              "dimensions": {
+                "breadth": {
+                  "unit": "centimeter",
+                  "value": 20
+                },
+                "height": {
+                  "unit": "centimeter",
+                  "value": 15
+                },
+                "length": {
+                  "unit": "centimeter",
+                  "value": 30
+                }
+              },
+              "id": "WB-BASELINE-8151",
+              "weight": {
+                "unit": "kilogram",
+                "value": 2.5
+              }
+            },
+            "provider": {
+              "address": {
+                "area_code": "456010",
+                "building": "12 Road",
+                "city": "Ujjain",
+                "country": "India",
+                "locality": "Freeganj",
+                "name": "Store Ujjain",
+                "state": "Madhya Pradesh"
+              },
+              "descriptor": {
+                "name": "Onetab Store"
+              }
+            }
+          },
+          "billing": {
+            "address": {
+              "area_code": "452001",
+              "building": "Building A",
+              "city": "Indore",
+              "country": "India",
+              "locality": "Local Area",
+              "name": "Onetab Office",
+              "state": "Madhya Pradesh"
+            },
+            "created_at": "2026-11-27T07:14:58.711Z",
+            "email": "billing@ondc.org",
+            "name": "Onetab",
+            "phone": "9876543210",
+            "tax_number": "23AAECO3224B1Z6",
+            "updated_at": "2026-11-27T07:14:58.711Z"
+          },
+          "cancellation_terms": [
+            {
+              "cancellation_fee": {
+                "amount": {
+                  "currency": "INR",
+                  "value": "0.00"
+                },
+                "percentage": "0.00"
+              },
+              "fulfillment_state": {
+                "descriptor": {
+                  "code": "Pending",
+                  "short_desc": "008"
+                }
+              }
+            },
+            {
+              "cancellation_fee": {
+                "amount": {
+                  "currency": "INR",
+                  "value": "50.00"
+                },
+                "percentage": "100.00"
+              },
+              "fulfillment_state": {
+                "descriptor": {
+                  "code": "Agent-assigned",
+                  "short_desc": "001,003"
+                }
+              }
+            },
+            {
+              "cancellation_fee": {
+                "amount": {
+                  "currency": "INR",
+                  "value": "50.00"
+                },
+                "percentage": "100.00"
+              },
+              "fulfillment_state": {
+                "descriptor": {
+                  "code": "Order-picked-up",
+                  "short_desc": "001,003"
+                }
+              }
+            },
+            {
+              "cancellation_fee": {
+                "amount": {
+                  "currency": "INR",
+                  "value": "50.00"
+                },
+                "percentage": "100.00"
+              },
+              "fulfillment_state": {
+                "descriptor": {
+                  "code": "Out-for-delivery",
+                  "short_desc": "011,012,013,014,015"
+                }
+              }
+            }
+          ],
+          "created_at": "2026-11-27T07:14:58.972Z",
+          "fulfillments": [
+            {
+              "agent": {
+                "name": "agent_name",
+                "phone": "9886098860"
+              },
+              "end": {
+                "contact": {
+                  "email": "buyer@onetab.ai",
+                  "phone": "9123456780"
+                },
+                "location": {
+                  "address": {
+                    "area_code": "452010",
+                    "building": "Sunrise",
+                    "city": "Indore",
+                    "country": "India",
+                    "locality": "Vijay Nagar",
+                    "name": "Flat 4B",
+                    "state": "Madhya Pradesh"
+                  },
+                  "gps": "22.7196,75.8577"
+                },
+                "person": {
+                  "name": "Buyer Person"
+                },
+                "time": {
+                  "range": {
+                    "end": "2026-11-28T07:14:59.353Z",
+                    "start": "2026-11-27T19:14:59.353Z"
+                  }
+                }
+              },
+              "id": "1",
+              "start": {
+                "contact": {
+                  "email": "store@onetab.ai",
+                  "phone": "9876543210"
+                },
+                "location": {
+                  "address": {
+                    "area_code": "456010",
+                    "building": "12 Road",
+                    "city": "Ujjain",
+                    "country": "India",
+                    "locality": "Freeganj",
+                    "name": "Store Ujjain",
+                    "state": "Madhya Pradesh"
+                  },
+                  "gps": "23.1793,75.7849"
+                },
+                "person": {
+                  "name": "Onetab Store"
+                },
+                "time": {
+                  "duration": "PT12H",
+                  "range": {
+                    "end": "2026-11-27T19:14:59.353Z",
+                    "start": "2026-11-27T07:14:59.353Z"
+                  },
+                  "timestamp": "2026-11-27T07:15:01.091Z"
+                }
+              },
+              "state": {
+                "descriptor": {
+                  "code": "Out-for-delivery"
+                }
+              },
+              "tags": [
+                {
+                  "code": "linked_provider",
+                  "list": [
+                    {
+                      "code": "id",
+                      "value": "ONETAB-1"
+                    },
+                    {
+                      "code": "name",
+                      "value": "Onetab Store"
+                    },
+                    {
+                      "code": "address",
+                      "value": "Store Ujjain,12 Road,Freeganj,Ujjain,Madhya Pradesh,456010"
+                    }
+                  ]
+                },
+                {
+                  "code": "linked_order",
+                  "list": [
+                    {
+                      "code": "id",
+                      "value": "WB-BASELINE-8151"
+                    },
+                    {
+                      "code": "currency",
+                      "value": "INR"
+                    },
+                    {
+                      "code": "declared_value",
+                      "value": "1200"
+                    },
+                    {
+                      "code": "weight_unit",
+                      "value": "kilogram"
+                    },
+                    {
+                      "code": "weight_value",
+                      "value": "2.5"
+                    },
+                    {
+                      "code": "dim_unit",
+                      "value": "centimeter"
+                    },
+                    {
+                      "code": "length",
+                      "value": "30"
+                    },
+                    {
+                      "code": "breadth",
+                      "value": "20"
+                    },
+                    {
+                      "code": "height",
+                      "value": "15"
+                    },
+                    {
+                      "code": "shipment_type",
+                      "value": "box"
+                    }
+                  ]
+                },
+                {
+                  "code": "linked_order_item",
+                  "list": [
+                    {
+                      "code": "category",
+                      "value": "Grocery"
+                    },
+                    {
+                      "code": "name",
+                      "value": "Item 1"
+                    },
+                    {
+                      "code": "currency",
+                      "value": "INR"
+                    },
+                    {
+                      "code": "value",
+                      "value": "1200"
+                    },
+                    {
+                      "code": "quantity",
+                      "value": "1"
+                    },
+                    {
+                      "code": "weight_unit",
+                      "value": "kilogram"
+                    },
+                    {
+                      "code": "weight_value",
+                      "value": "2.5"
+                    }
+                  ]
+                }
+              ],
+              "tracking": true,
+              "type": "Delivery",
+              "vehicle": {
+                "registration": "3LVJ945"
+              }
+            }
+          ],
+          "id": "ORD-1795763698957",
+          "items": [
+            {
+              "category_id": "Standard Delivery",
+              "descriptor": {
+                "code": "P2H2P"
+              },
+              "fulfillment_id": "1",
+              "id": "I1",
+              "time": {
+                "duration": "P2D",
+                "label": "TAT",
+                "timestamp": "2026-11-29"
+              }
+            }
+          ],
+          "payment": {
+            "@ondc/org/settlement_basis": "invoicing",
+            "@ondc/org/settlement_window": "P15D",
+            "collected_by": "BAP",
+            "status": "NOT-PAID",
+            "type": "POST-FULFILLMENT"
+          },
+          "provider": {
+            "id": "P1",
+            "locations": [
+              {
+                "id": "L1"
+              }
+            ]
+          },
+          "quote": {
+            "breakup": [
+              {
+                "@ondc/org/item_id": "I1",
+                "@ondc/org/title_type": "delivery",
+                "price": {
+                  "currency": "INR",
+                  "value": "50.00"
+                }
+              },
+              {
+                "@ondc/org/item_id": "I1",
+                "@ondc/org/title_type": "tax",
+                "price": {
+                  "currency": "INR",
+                  "value": "9.00"
+                }
+              }
+            ],
+            "price": {
+              "currency": "INR",
+              "value": "59.00"
+            }
+          },
+          "state": "In-progress",
+          "tags": [
+            {
+              "code": "bpp_terms",
+              "list": [
+                {
+                  "code": "max_liability",
+                  "value": "2"
+                },
+                {
+                  "code": "max_liability_cap",
+                  "value": "10000"
+                },
+                {
+                  "code": "mandatory_arbitration",
+                  "value": "false"
+                },
+                {
+                  "code": "court_jurisdiction",
+                  "value": "Bengaluru"
+                },
+                {
+                  "code": "delay_interest",
+                  "value": "1000"
+                },
+                {
+                  "code": "static_terms",
+                  "value": "https://github.com/ONDC-Official/protocol-network-extension/discussions/79"
+                }
+              ]
+            },
+            {
+              "code": "bap_terms",
+              "list": [
+                {
+                  "code": "accept_bpp_terms",
+                  "value": "Y"
+                }
+              ]
+            }
+          ],
+          "updated_at": "2026-11-27T07:15:07.659Z"
+        }
+      }
+    },
+    "res": {
+      "response": {
+        "context": {
+          "action": "on_status",
+          "bap_id": "ondc.onetab.ai",
+          "bap_uri": "https://ondc.onetab.ai/ondc-seller-v2",
+          "bpp_id": "workbench.ondc.tech",
+          "bpp_uri": "https://workbench.ondc.tech/api-service/nic2004:60232/1.2.0/seller",
+          "city": "std:0734",
+          "core_version": "1.2.0",
+          "country": "IND",
+          "domain": "nic2004:60232",
+          "message_id": "ce492a18-f428-416f-a1c1-2eba9c5c28c2",
+          "timestamp": "2026-11-27T07:15:07.659Z",
+          "transaction_id": "19115b40-b849-4326-9a31-5aab5a42dc95",
+          "ttl": "PT30S"
+        },
+        "message": {
+          "ack": {
+            "status": "ACK"
+          }
+        }
+      }
+    }
+  },
+  {
+    "req": {
+      "context": {
+        "action": "on_status",
+        "bap_id": "ondc.onetab.ai",
+        "bap_uri": "https://ondc.onetab.ai/ondc-seller-v2",
+        "bpp_id": "workbench.ondc.tech",
+        "bpp_uri": "https://workbench.ondc.tech/api-service/nic2004:60232/1.2.0/seller",
+        "city": "std:0734",
+        "core_version": "1.2.0",
+        "country": "IND",
+        "domain": "nic2004:60232",
+        "message_id": "7b257ba8-db3a-4f54-ad45-c4360419eec5",
+        "timestamp": "2026-11-27T07:15:10.747Z",
+        "transaction_id": "19115b40-b849-4326-9a31-5aab5a42dc95",
+        "ttl": "PT30S"
+      },
+      "message": {
+        "order": {
+          "@ondc/org/linked_order": {
+            "items": [
+              {
+                "category_id": "Grocery",
+                "descriptor": {
+                  "name": "Item 1"
+                },
+                "price": {
+                  "currency": "INR",
+                  "value": "1200.00"
+                },
+                "quantity": {
+                  "count": 1,
+                  "measure": {
+                    "unit": "kilogram",
+                    "value": 2.5
+                  }
+                }
+              }
+            ],
+            "order": {
+              "dimensions": {
+                "breadth": {
+                  "unit": "centimeter",
+                  "value": 20
+                },
+                "height": {
+                  "unit": "centimeter",
+                  "value": 15
+                },
+                "length": {
+                  "unit": "centimeter",
+                  "value": 30
+                }
+              },
+              "id": "WB-BASELINE-8151",
+              "weight": {
+                "unit": "kilogram",
+                "value": 2.5
+              }
+            },
+            "provider": {
+              "address": {
+                "area_code": "456010",
+                "building": "12 Road",
+                "city": "Ujjain",
+                "country": "India",
+                "locality": "Freeganj",
+                "name": "Store Ujjain",
+                "state": "Madhya Pradesh"
+              },
+              "descriptor": {
+                "name": "Onetab Store"
+              }
+            }
+          },
+          "billing": {
+            "address": {
+              "area_code": "452001",
+              "building": "Building A",
+              "city": "Indore",
+              "country": "India",
+              "locality": "Local Area",
+              "name": "Onetab Office",
+              "state": "Madhya Pradesh"
+            },
+            "created_at": "2026-11-27T07:14:58.711Z",
+            "email": "billing@ondc.org",
+            "name": "Onetab",
+            "phone": "9876543210",
+            "tax_number": "23AAECO3224B1Z6",
+            "updated_at": "2026-11-27T07:14:58.711Z"
+          },
+          "cancellation_terms": [
+            {
+              "cancellation_fee": {
+                "amount": {
+                  "currency": "INR",
+                  "value": "0.00"
+                },
+                "percentage": "0.00"
+              },
+              "fulfillment_state": {
+                "descriptor": {
+                  "code": "Pending",
+                  "short_desc": "008"
+                }
+              }
+            },
+            {
+              "cancellation_fee": {
+                "amount": {
+                  "currency": "INR",
+                  "value": "50.00"
+                },
+                "percentage": "100.00"
+              },
+              "fulfillment_state": {
+                "descriptor": {
+                  "code": "Agent-assigned",
+                  "short_desc": "001,003"
+                }
+              }
+            },
+            {
+              "cancellation_fee": {
+                "amount": {
+                  "currency": "INR",
+                  "value": "50.00"
+                },
+                "percentage": "100.00"
+              },
+              "fulfillment_state": {
+                "descriptor": {
+                  "code": "Order-picked-up",
+                  "short_desc": "001,003"
+                }
+              }
+            },
+            {
+              "cancellation_fee": {
+                "amount": {
+                  "currency": "INR",
+                  "value": "50.00"
+                },
+                "percentage": "100.00"
+              },
+              "fulfillment_state": {
+                "descriptor": {
+                  "code": "Out-for-delivery",
+                  "short_desc": "011,012,013,014,015"
+                }
+              }
+            }
+          ],
+          "created_at": "2026-11-27T07:14:58.972Z",
+          "fulfillments": [
+            {
+              "agent": {
+                "name": "agent_name",
+                "phone": "9886098860"
+              },
+              "end": {
+                "contact": {
+                  "email": "buyer@onetab.ai",
+                  "phone": "9123456780"
+                },
+                "location": {
+                  "address": {
+                    "area_code": "452010",
+                    "building": "Sunrise",
+                    "city": "Indore",
+                    "country": "India",
+                    "locality": "Vijay Nagar",
+                    "name": "Flat 4B",
+                    "state": "Madhya Pradesh"
+                  },
+                  "gps": "22.7196,75.8577"
+                },
+                "person": {
+                  "name": "Buyer Person"
+                },
+                "time": {
+                  "range": {
+                    "end": "2026-11-28T07:14:59.353Z",
+                    "start": "2026-11-27T19:14:59.353Z"
+                  },
+                  "timestamp": "2026-11-27T07:15:10.747Z"
+                }
+              },
+              "id": "1",
+              "start": {
+                "contact": {
+                  "email": "store@onetab.ai",
+                  "phone": "9876543210"
+                },
+                "location": {
+                  "address": {
+                    "area_code": "456010",
+                    "building": "12 Road",
+                    "city": "Ujjain",
+                    "country": "India",
+                    "locality": "Freeganj",
+                    "name": "Store Ujjain",
+                    "state": "Madhya Pradesh"
+                  },
+                  "gps": "23.1793,75.7849"
+                },
+                "person": {
+                  "name": "Onetab Store"
+                },
+                "time": {
+                  "duration": "PT12H",
+                  "range": {
+                    "end": "2026-11-27T19:14:59.353Z",
+                    "start": "2026-11-27T07:14:59.353Z"
+                  },
+                  "timestamp": "2026-11-27T07:15:01.091Z"
+                }
+              },
+              "state": {
+                "descriptor": {
+                  "code": "Order-delivered"
+                }
+              },
+              "tags": [
+                {
+                  "code": "linked_provider",
+                  "list": [
+                    {
+                      "code": "id",
+                      "value": "ONETAB-1"
+                    },
+                    {
+                      "code": "name",
+                      "value": "Onetab Store"
+                    },
+                    {
+                      "code": "address",
+                      "value": "Store Ujjain,12 Road,Freeganj,Ujjain,Madhya Pradesh,456010"
+                    }
+                  ]
+                },
+                {
+                  "code": "linked_order",
+                  "list": [
+                    {
+                      "code": "id",
+                      "value": "WB-BASELINE-8151"
+                    },
+                    {
+                      "code": "currency",
+                      "value": "INR"
+                    },
+                    {
+                      "code": "declared_value",
+                      "value": "1200"
+                    },
+                    {
+                      "code": "weight_unit",
+                      "value": "kilogram"
+                    },
+                    {
+                      "code": "weight_value",
+                      "value": "2.5"
+                    },
+                    {
+                      "code": "dim_unit",
+                      "value": "centimeter"
+                    },
+                    {
+                      "code": "length",
+                      "value": "30"
+                    },
+                    {
+                      "code": "breadth",
+                      "value": "20"
+                    },
+                    {
+                      "code": "height",
+                      "value": "15"
+                    },
+                    {
+                      "code": "shipment_type",
+                      "value": "box"
+                    }
+                  ]
+                },
+                {
+                  "code": "linked_order_item",
+                  "list": [
+                    {
+                      "code": "category",
+                      "value": "Grocery"
+                    },
+                    {
+                      "code": "name",
+                      "value": "Item 1"
+                    },
+                    {
+                      "code": "currency",
+                      "value": "INR"
+                    },
+                    {
+                      "code": "value",
+                      "value": "1200"
+                    },
+                    {
+                      "code": "quantity",
+                      "value": "1"
+                    },
+                    {
+                      "code": "weight_unit",
+                      "value": "kilogram"
+                    },
+                    {
+                      "code": "weight_value",
+                      "value": "2.5"
+                    }
+                  ]
+                }
+              ],
+              "tracking": true,
+              "type": "Delivery",
+              "vehicle": {
+                "registration": "3LVJ945"
+              }
+            }
+          ],
+          "id": "ORD-1795763698957",
+          "items": [
+            {
+              "category_id": "Standard Delivery",
+              "descriptor": {
+                "code": "P2H2P"
+              },
+              "fulfillment_id": "1",
+              "id": "I1",
+              "time": {
+                "duration": "P2D",
+                "label": "TAT",
+                "timestamp": "2026-11-29"
+              }
+            }
+          ],
+          "payment": {
+            "@ondc/org/settlement_basis": "invoicing",
+            "@ondc/org/settlement_window": "P15D",
+            "collected_by": "BAP",
+            "status": "NOT-PAID",
+            "type": "POST-FULFILLMENT"
+          },
+          "provider": {
+            "id": "P1",
+            "locations": [
+              {
+                "id": "L1"
+              }
+            ]
+          },
+          "quote": {
+            "breakup": [
+              {
+                "@ondc/org/item_id": "I1",
+                "@ondc/org/title_type": "delivery",
+                "price": {
+                  "currency": "INR",
+                  "value": "50.00"
+                }
+              },
+              {
+                "@ondc/org/item_id": "I1",
+                "@ondc/org/title_type": "tax",
+                "price": {
+                  "currency": "INR",
+                  "value": "9.00"
+                }
+              }
+            ],
+            "price": {
+              "currency": "INR",
+              "value": "59.00"
+            }
+          },
+          "state": "Completed",
+          "tags": [
+            {
+              "code": "bpp_terms",
+              "list": [
+                {
+                  "code": "max_liability",
+                  "value": "2"
+                },
+                {
+                  "code": "max_liability_cap",
+                  "value": "10000"
+                },
+                {
+                  "code": "mandatory_arbitration",
+                  "value": "false"
+                },
+                {
+                  "code": "court_jurisdiction",
+                  "value": "Bengaluru"
+                },
+                {
+                  "code": "delay_interest",
+                  "value": "1000"
+                },
+                {
+                  "code": "static_terms",
+                  "value": "https://github.com/ONDC-Official/protocol-network-extension/discussions/79"
+                }
+              ]
+            },
+            {
+              "code": "bap_terms",
+              "list": [
+                {
+                  "code": "accept_bpp_terms",
+                  "value": "Y"
+                }
+              ]
+            }
+          ],
+          "updated_at": "2026-11-27T07:15:10.747Z"
+        }
+      }
+    },
+    "res": {
+      "response": {
+        "context": {
+          "action": "on_status",
+          "bap_id": "ondc.onetab.ai",
+          "bap_uri": "https://ondc.onetab.ai/ondc-seller-v2",
+          "bpp_id": "workbench.ondc.tech",
+          "bpp_uri": "https://workbench.ondc.tech/api-service/nic2004:60232/1.2.0/seller",
+          "city": "std:0734",
+          "core_version": "1.2.0",
+          "country": "IND",
+          "domain": "nic2004:60232",
+          "message_id": "7b257ba8-db3a-4f54-ad45-c4360419eec5",
+          "timestamp": "2026-11-27T07:15:10.747Z",
+          "transaction_id": "19115b40-b849-4326-9a31-5aab5a42dc95",
+          "ttl": "PT30S"
+        },
+        "message": {
+          "ack": {
+            "status": "ACK"
+          }
+        }
+      }
+    }
+  }
+]

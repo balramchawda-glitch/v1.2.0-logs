@@ -1,0 +1,21 @@
+{
+  "context": {
+    "action": "track",
+    "bap_id": "ondc.onetab.ai",
+    "bap_uri": "https://ondc.onetab.ai/ondc-seller-v2",
+    "bpp_id": "workbench.ondc.tech",
+    "bpp_uri": "https://workbench.ondc.tech/api-service/nic2004:60232/1.2.0/seller",
+    "city": "std:0734",
+    "core_version": "1.2.0",
+    "country": "IND",
+    "domain": "nic2004:60232",
+    "message_id": "22d7a54f-ec91-46a0-80d4-c9016d2cebb9",
+    "timestamp": "2026-11-27T07:15:05.437Z",
+    "transaction_id": "19115b40-b849-4326-9a31-5aab5a42dc95",
+    "ttl": "PT30S"
+  },
+  "message": {
+    "callback_url": "https://ondc.onetab.ai/ondc-seller-v2/on_track",
+    "order_id": "ORD-1795763698957"
+  }
+}

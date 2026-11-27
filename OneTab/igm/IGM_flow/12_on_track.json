@@ -1,0 +1,47 @@
+{
+  "context": {
+    "action": "on_track",
+    "bap_id": "ondc.onetab.ai",
+    "bap_uri": "https://ondc.onetab.ai/ondc-seller-v2",
+    "bpp_id": "workbench.ondc.tech",
+    "bpp_uri": "https://workbench.ondc.tech/api-service/nic2004:60232/1.2.0/seller",
+    "city": "std:0734",
+    "core_version": "1.2.0",
+    "country": "IND",
+    "domain": "nic2004:60232",
+    "message_id": "5b024ba9-42db-4ff0-9220-d415c900533a",
+    "timestamp": "2026-11-27T07:45:55.565Z",
+    "transaction_id": "cc813161-aa44-4ae6-bc91-9eee20c5c095",
+    "ttl": "PT30S"
+  },
+  "message": {
+    "tracking": {
+      "id": "1",
+      "status": "active",
+      "tags": [
+        {
+          "code": "order",
+          "list": [
+            {
+              "code": "id",
+              "value": "ORD-1795765548651"
+            }
+          ]
+        },
+        {
+          "code": "config",
+          "list": [
+            {
+              "code": "attr",
+              "value": "tracking.url"
+            },
+            {
+              "code": "type",
+              "value": "deferred"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

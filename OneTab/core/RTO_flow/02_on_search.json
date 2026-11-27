@@ -1,0 +1,149 @@
+{
+  "context": {
+    "action": "on_search",
+    "bap_id": "ondc.onetab.ai",
+    "bap_uri": "https://ondc.onetab.ai/ondc-seller-v2",
+    "bpp_id": "workbench.ondc.tech",
+    "bpp_uri": "https://workbench.ondc.tech/api-service/nic2004:60232/1.2.0/seller",
+    "city": "std:0734",
+    "core_version": "1.2.0",
+    "country": "IND",
+    "domain": "nic2004:60232",
+    "message_id": "c5f438ed-a161-4bc7-a1c8-ebfff774a7e0",
+    "timestamp": "2026-11-27T07:31:14.191Z",
+    "transaction_id": "72e55c8d-f724-43aa-b420-04a0694cb2f5",
+    "ttl": "PT30S"
+  },
+  "message": {
+    "catalog": {
+      "bpp/descriptor": {
+        "name": "LSP Aggregator Inc",
+        "tags": [
+          {
+            "code": "bpp_terms",
+            "list": [
+              {
+                "code": "static_terms",
+                "value": ""
+              },
+              {
+                "code": "static_terms_new",
+                "value": "https://github.com/ONDC-Official/NP-Static-Terms/lspNP_LSP/1.0/tc.pdf"
+              },
+              {
+                "code": "effective_date",
+                "value": "2026-11-27T07:31:14.191Z"
+              }
+            ]
+          }
+        ]
+      },
+      "bpp/providers": [
+        {
+          "categories": [
+            {
+              "id": "Standard Delivery",
+              "time": {
+                "duration": "P2D",
+                "label": "TAT",
+                "timestamp": "2026-11-29"
+              }
+            }
+          ],
+          "descriptor": {
+            "long_desc": "LSP Courier Inc",
+            "name": "LSP Courier Inc",
+            "short_desc": "LSP Courier Inc"
+          },
+          "fulfillments": [
+            {
+              "id": "1",
+              "start": {
+                "time": {
+                  "duration": "PT12H"
+                }
+              },
+              "tags": [
+                {
+                  "code": "distance",
+                  "list": [
+                    {
+                      "code": "motorable_distance_type",
+                      "value": "kilometer"
+                    },
+                    {
+                      "code": "motorable_distance",
+                      "value": "1.8"
+                    }
+                  ]
+                }
+              ],
+              "type": "Delivery"
+            },
+            {
+              "id": "2",
+              "type": "RTO"
+            }
+          ],
+          "id": "P1",
+          "items": [
+            {
+              "category_id": "Standard Delivery",
+              "descriptor": {
+                "code": "P2H2P",
+                "long_desc": "Fast delivery",
+                "name": "Fast delivery",
+                "short_desc": "Fast delivery"
+              },
+              "fulfillment_id": "1",
+              "id": "I1",
+              "parent_item_id": "",
+              "price": {
+                "currency": "INR",
+                "value": "59.00"
+              },
+              "time": {
+                "duration": "P2D",
+                "label": "TAT",
+                "timestamp": "2026-11-29"
+              }
+            },
+            {
+              "category_id": "Standard Delivery",
+              "descriptor": {
+                "code": "P2P",
+                "long_desc": "RTO quote",
+                "name": "RTO quote",
+                "short_desc": "RTO quote"
+              },
+              "fulfillment_id": "2",
+              "id": "I2",
+              "parent_item_id": "I1",
+              "price": {
+                "currency": "INR",
+                "value": "23.60"
+              },
+              "time": {
+                "duration": "P2D",
+                "label": "TAT",
+                "timestamp": "2026-11-29"
+              }
+            }
+          ],
+          "locations": [
+            {
+              "address": {
+                "area_code": "560076",
+                "city": "Bengaluru",
+                "state": "KA",
+                "street": "Jayanagar 4th Block"
+              },
+              "gps": "12.967555,77.749666",
+              "id": "L1"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

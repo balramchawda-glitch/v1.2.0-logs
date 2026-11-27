@@ -1,0 +1,56 @@
+{
+  "context": {
+    "action": "update",
+    "bap_id": "ondc.onetab.ai",
+    "bap_uri": "https://ondc.onetab.ai/ondc-seller-v2",
+    "bpp_id": "workbench.ondc.tech",
+    "bpp_uri": "https://workbench.ondc.tech/api-service/nic2004:60232/1.2.0/seller",
+    "city": "std:0734",
+    "core_version": "1.2.0",
+    "country": "IND",
+    "domain": "nic2004:60232",
+    "message_id": "a172b13e-08ba-4691-b6ee-0a9b48f0e644",
+    "timestamp": "2026-11-27T07:45:48.943Z",
+    "transaction_id": "cc813161-aa44-4ae6-bc91-9eee20c5c095",
+    "ttl": "PT30S"
+  },
+  "message": {
+    "order": {
+      "fulfillments": [
+        {
+          "id": "1",
+          "start": {
+            "instructions": {
+              "code": "2",
+              "short_desc": "123456"
+            }
+          },
+          "tags": [
+            {
+              "code": "state",
+              "list": [
+                {
+                  "code": "ready_to_ship",
+                  "value": "yes"
+                }
+              ]
+            }
+          ],
+          "type": "Delivery"
+        }
+      ],
+      "id": "ORD-1795765548651",
+      "items": [
+        {
+          "category_id": "Standard Delivery",
+          "descriptor": {
+            "code": "P2H2P"
+          },
+          "id": "I1"
+        }
+      ],
+      "updated_at": "2026-11-27T07:45:48.943Z"
+    },
+    "update_target": "fulfillment"
+  }
+}
